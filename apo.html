@@ -11,26 +11,4 @@
 <body>
 
 </body>
-<?php
-date_default_timezone_set('Asia/Tokyo');
-include("getHoliday.php");
-// 年月を取得する
-$datecounter = new DateTime("now");
-$ym_now = $datecounter->format("Ym");
-$ym_label = $datecounter->format("Y年m月");
-$y = substr($ym_now, 0, 4);
-$m = substr($ym_now, 4, 2);
-?>
-<h3 class="title-level03"><?php echo $ym_label; ?></h3>
-<table class="type05 section-sss">
-<tr>
-    <th><span class="not">日</span></th>
-    <th><span class="not">月</span></th>
-    <th><span class="not">火</span></th>
-    <th><span class="not">水</span></th>
-    <th><span class="not">木</span></th>
-    <th><span class="not">金</span></th>
-    <th><span class="not">土</span></th>
-</tr>
-<tr>
 </html>

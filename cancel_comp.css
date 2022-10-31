@@ -1,0 +1,45 @@
+/* キャンセル完了画面 */
+header{
+    
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-bottom: 3px solid #FFA500;
+}
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+/* ---------------------------- */
+.container{
+
+    top: 18%;
+}
+
+.main{/*キャンセル完了致しました*/
+    position: absolute;
+
+    top: 30%;
+    left:27%;
+    margin:10%;
+}
+.btn{/*トップ画面へ*/
+    position: relative;
+    top: 30px;
+    left: 15%;
+    height:50px;
+    width:200px;
+    
+    background: #FFFFFF;
+}

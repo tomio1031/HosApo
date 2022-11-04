@@ -1,0 +1,242 @@
+header{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    /* height: 134px; */
+    height:17%;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-bottom: 3px solid #FFA500;
+}
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+#rogout{
+    position: absolute;
+    left: 79.58%;
+    right: 2.01%;
+    top: 38.81%;
+    bottom: 20.15%;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
+}
+
+#top_isya{
+    position: absolute;
+    width: 1200px;
+    height: 650px;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    background: url(24281318_m.jpg);
+}
+
+.kensaku{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 469px;
+    height: 36px;
+    /* left: 486px; */
+    top: 451px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    border-radius: 5px;
+}
+
+#kensaku-jouken{
+    position: absolute;
+    /* left: 32.29%;
+    right: 32.22%; */
+    top: 150%;
+    bottom: 68.67%;
+
+    width: 100%;
+    height: 100%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    filter: drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16)) drop-shadow(0px 2px 4px rgba(47, 168, 79, 0.24));
+}
+
+#button-kensaku{
+    position: absolute;
+    
+    top: 0px;
+    right: -45px;
+    
+}
+
+.onemore{
+    position: absolute;
+    width: 319px;
+    height: 48px;
+    left: 138px;
+    top: 819px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+
+    color: rgba(91, 207, 102, 0.85);
+}
+
+.onemore_box{
+    position: absolute;
+    width: 1536px;
+    height: 397px;
+    left: 0px;
+    top: 924px;
+    overflow-x: scroll;
+
+    background: #FFFFFF;
+}
+
+.uketuketyu{
+    position: absolute;
+    width: 560px;
+    height: 48px;
+    left: 138px;
+    top: 1409px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+    
+    color: rgba(91, 207, 102, 0.85);
+}
+
+.uketuketyu_box{
+    position: absolute;
+    width: 1536px;
+    height: 397px;
+    left: -1px;
+    top: 1514px;
+    overflow-x: scroll;
+
+    background: #FFFFFF;
+}
+
+.card{
+    /* position: absolute; */
+    width: 475px;
+    height: 341px;
+    left: 37px;
+    top: 28px;
+}
+
+.card-img{
+    position: absolute;
+    width: 181px;
+    height: 127px;
+    left: 20px;
+    top: 30px;
+}
+
+.card-title{
+    position: absolute;
+    width: 187px;
+    height: 39px;
+    left: 210px;
+    top: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    letter-spacing: -0.0004em;
+
+    color: #2FA84F;
+
+}
+
+.card-text{
+    position: absolute;
+    width: 200px;
+    height: 37px;
+    left: 210px;
+    top: 70px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.0004em;
+
+    color: #000000;
+}
+
+#yoyaku-btn{
+    position: absolute;
+    /* left: 7.36%; */
+    right: 69.31%;
+    top: 58.44%;
+    bottom: 27.46%;
+
+    width: 90%;
+    height: 15%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    filter: drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16)) drop-shadow(0px 2px 4px rgba(47, 168, 79, 0.24));
+}
+
+.number{
+    position: absolute;
+    width: 197px;
+    height: 24px;
+    /* left: 204px; */
+    top: 250px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.0004em;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    color: #000000;
+
+}

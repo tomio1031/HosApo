@@ -1,3 +1,4 @@
+<img src="./img/1_Primary_logo_on_transparent_267x69.png" onclick="location.href='./top.html'">
     <!-- 病院名を表示 -->
     <?php 
     ?>

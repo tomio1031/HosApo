@@ -1,0 +1,119 @@
+header{
+    
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+
+
+}
+
+
+h2{
+    position: absolute;
+width: 420px;
+height: 74px;
+left: 100px;
+top: 170px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.username{
+position: absolute;
+width: 350px;
+height: 72px;
+left: 150px;
+top: 300px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+left: 50%;
+transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+}
+
+
+
+.password{
+        position: absolute;
+    width: 350px;
+    height: 72px;
+    left: 100px;
+    top: 400px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+
+}
+
+
+.btn{/*ログイン画面へ*/
+    position: relative;
+    top: 280px;
+    left: 11%;
+    height:50px;
+    width:200px;
+
+    
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+}
+
+.user{
+position: absolute;
+width: 350px;
+height: 72px;
+left: 0px;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 29px;
+
+left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+
+}
+

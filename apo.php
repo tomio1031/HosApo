@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <img src="./img/1_Primary_logo_on_transparent_267x69.png" onclick="location.href='./top.html'">
     <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
     <!-- 病院名を表示 -->
     <h2>病院予約</h2>
     <p>診療科を選択してください</p>
     <!-- 診療科を表示 -->
+    <?php
+    $stmt=$db->prepare("SELECT FROM WHERE ")
+    ?>
     <!--カレンダーを表示-->
 </body>
 </html>

@@ -26,7 +26,12 @@
             .today{
                 background-color:orange;
             }
-
+            th:nth-of-type(1),td:nth-of-type(1){
+                color:red;
+            }
+            th:nth-of-type(7),td:nth-of-type(7){
+                color:blue;
+            }
         </style>
     
     </head>

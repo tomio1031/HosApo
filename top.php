@@ -1,11 +1,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/top_css.css">
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 </head>
 <body>
+  <!-- ヘッダー -->
     <header>
         <h1 class="rogo">
             <a href="">
@@ -14,7 +14,7 @@
         </h1>
         <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
     </header>
-
+<!--  -->
     <div>
         <img id="top_isya" src="img/24281318_m.jpg">
     <div class="wrapper">
@@ -24,7 +24,7 @@
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>
-            <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
+            <!-- <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button> -->
         </header>
        
         <div class="container">

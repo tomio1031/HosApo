@@ -30,18 +30,24 @@
     <div class="gazou">
         <img class="isya_img" src="img/24281318_m.jpg">
     </div>
-    <div class="kensaku">
-        <input type="search" class="form-control" placeholder="エリア・駅・病院名" name="kensaku-word" required>
-    </div>
-    <div class="kensaku-btn">
-        <button class="btn btn-success" type="button" id="button-kensaku"><i class="bi bi-search"></i></button>
-    </div>
-    <div class="kensaku-jouken">
-        <button class="btn btn-success">条件で絞り込む</button>
-    </div>
+    <form action="kekka_test.php" method="post">
+        <div class="kensaku">
+            <input type="search" class="form-control" placeholder="エリア・駅・病院名" name="kensaku-word" required>
+        </div>
+        <div class="kensaku-btn">
+            <button class="btn btn-success" type="button" id="button-kensaku"><i class="bi bi-search"></i></button>
+        </div>
+        <div class="kensaku-jouken">
+            <button class="btn btn-success">条件で絞り込む</button>
+        </div>
+    </form>
    </div>
    <!-- メイン2 -->
-   <div class="main2">main2</div>
+   <div class="main2">
+    <div class="onemore_txt">
+        <h2>もう一度予約する</h2>
+    </div>
+   </div>
  
  </div>
 

@@ -1,0 +1,113 @@
+header{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    /*height: 134px;  */
+    height:17%;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-bottom: 3px solid #FFA500;
+}
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+.logout{
+    position: absolute;
+    left: 79.58%;
+    right: 2.01%;
+    top: 38.81%;
+    bottom: 20.15%;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
+}
+
+.isya_img{
+    position: absolute;
+    width: 1200px;
+    height: 650px;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    background: url(24281318_m.jpg); 
+}
+
+.kensaku{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 469px;
+    height: 36px;
+    top: 451px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    border-radius: 5px;
+}
+
+.kensaku-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 469px;
+    height: 36px;
+    top: 451px;
+
+    right: 3%;
+
+    border-radius: 5px;  
+}
+
+.kensaku-jouken{
+    position: absolute;
+    top: 70%;
+    bottom: 68.67%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    filter: drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16)) drop-shadow(0px 2px 4px rgba(47, 168, 79, 0.24));
+
+}
+
+.onemore_txt{
+    position: absolute;
+    width: 319px;
+    height: 48px;
+    left: 138px;
+    top: 819px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+
+    color: rgba(91, 207, 102, 0.85);
+}

@@ -26,6 +26,7 @@
             .today{
                 background-color:orange;
             }
+
         </style>
     
     </head>
@@ -58,7 +59,7 @@
                     <td>8</td>
                     <td>9</td>
                     <td>10</td>
-                    <td>11</td>
+                    <td class="today">11</td>
                     <td>12</td>
                 </tr>
                 <tr>

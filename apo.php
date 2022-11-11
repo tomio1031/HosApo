@@ -24,6 +24,23 @@ echo $data;
         <title>Document</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans+JP & display=swap" rel="stylesheet">
+        <style>
+            .container{
+                font-family: 'Noto Sans JP', sans-serif;
+                margin-top:80px;
+            }
+            h3{
+                margin-bottom:30px;
+            }
+            th{
+                height: 30px;
+                text-aligin:center;
+            }
+            td{
+                height:100px;
+            }
+        </style>
+    
     </head>
     <body>
         <div class="container">

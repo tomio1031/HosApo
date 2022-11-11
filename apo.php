@@ -23,6 +23,9 @@
             td{
                 height:100px;
             }
+            .today{
+                background-color:orange;
+            }
         </style>
     
     </head>

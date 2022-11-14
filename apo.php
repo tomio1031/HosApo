@@ -26,7 +26,7 @@
                 height:100px;
             }
             .today{
-                background-color:orange;
+                background-color:orange !important;
             }
             th:nth-of-type(1),td:nth-of-type(1){
                 color:red;

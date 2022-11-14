@@ -63,6 +63,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             h3{
                 margin-bottom:30px;
+                text-align:center;
             }
             th{
                 height: 30px;

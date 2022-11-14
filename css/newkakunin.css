@@ -1,0 +1,27 @@
+header{
+    
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+
+
+
+
+
+

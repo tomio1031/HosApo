@@ -39,9 +39,8 @@
     </head>
     <body>
         <div class="container">
-            <h3><a>&lt;</a>&nbsp;&nbsp;2022年 11月&nbsp;&nbsp;<a>&gt;</a></h3>
-
-            <table class="table.table-bordered">
+            <h3 class="mb-5"><a href="#">&lt;</a>&nbsp;2022年 11月&nbsp;<a href="#">&gt;</a></h3>
+            <table class="table table-bordered">
                 <tr>
                     <th>日</th>
                     <th>月</th>

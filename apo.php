@@ -1,3 +1,5 @@
+<h2>予約したい日時を選択してください</h2>
+
 <?php
 date_default_timezone_set('Asia/Tokyo');
 

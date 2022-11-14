@@ -82,7 +82,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     </head>
     <body>
         <div class="container">
-        <h2 style="text-aligin:center;">予約したい日時を選択してください</h2>
+        <h2 style="text-aligin:center; text-color:red;">予約したい日時を選択してください</h2>
             <h3 class="mb-5"><a href="?ym=<?php echo $prev;?>">&lt;</a><?php echo $html_title;?><a href="?ym=<?php echo $next;?>">&gt;</a></h3>
             <table class="table table-bordered">
                 <tr>

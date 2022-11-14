@@ -58,8 +58,12 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 font-family: 'Noto Sans JP', sans-serif;
                 margin-top:80px;
             }
+            h2{
+                text-align:center;
+            }
             h3{
                 margin-bottom:30px;
+                text-align:center;
             }
             th{
                 height: 30px;
@@ -78,11 +82,18 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 color:blue;
             }
         </style>
-    
     </head>
     <body>
+        <header>
+            <h1 class="rogo">
+                <a href="./top.php">
+                    <img src="img/1_Primary_logo_on_transparent_267x69.png">
+                </a>
+            </h1>
+            <button href="login.html" class="logout" id="rogout">ログアウト</button>
+        </header>
         <div class="container">
-        <h2 style="text-aligin:center;">予約したい日時を選択してください</h2>
+        <h2>予約したい日時を選択してください</h2>
             <h3 class="mb-5"><a href="?ym=<?php echo $prev;?>">&lt;</a><?php echo $html_title;?><a href="?ym=<?php echo $next;?>">&gt;</a></h3>
             <table class="table table-bordered">
                 <tr>

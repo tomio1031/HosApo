@@ -81,6 +81,25 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             th:nth-of-type(7),td:nth-of-type(7){
                 color:blue;
             }
+            header{
+                box-sizing: border-box;
+                position: absolute;
+                width: 1536px;
+                /* height: 134px; */
+                height:17%;
+                left: 0px;
+                top: 0px;
+
+                background: #FFFFFF;
+                border-bottom: 3px solid #FFA500;
+            }
+            .rogo{
+                position: absolute;
+                width: 249px;
+                height: 69px;
+                left: 42px;
+                top: 30px;
+            }
         </style>
     </head>
     <body>

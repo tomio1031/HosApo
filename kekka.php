@@ -20,7 +20,22 @@
 
     <!--戻るボタン -->
     <a href="top.php">戻る</a>
+<!-- 検索結果表示 -->
+<?php
+echo "フリーワード:". $_POST[free_search]. "検索結果". $_POST[searchkey]."件";
 
+$pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1417815-hosapo;charset=utf8','LAA1417815','Pass0411');
+
+$sql = "SELECT * FROM hosapo_hospital_tbl  WHERE hospital_name  LIKE ? ORDER BY hospital_id  DESC";
+
+$ps = $pdo->prepare($sql);
+$ps->bindValue(1, "%" . $_POST['free_search'] . "%", PDO::PARAM_STR);
+$ps->bindValue(2, "%" . $_POST['searchkey'] . "%", PDO::PARAM_STR);
+$ps->execute();
+
+
+
+?>
     
 <body>
 </body>

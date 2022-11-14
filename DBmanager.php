@@ -2,15 +2,15 @@
 class DBManager{
     //接続のメソッド
     private function dbConnect(){
-        $pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1417815-hosapo;charset=utf8','LAA1417815','Pass0411');
+        $pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
         return $pdo;     
     }
     //hosapo_hospital_tblを名前指定で取得するメソッド
-    public function getUserTblByid($hospital_name){
+    public function getUserTblByid($kensaku_word){
         $pdo = $this->dbConnect();
-        $sql = "SELECT * FROM hosapo_hospital_tbl WHERE id LIKE ? ";
+        $sql = "SELECT * FROM hosapo_hospital_tbl WHERE hospital_name LIKE ? ";
         $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,"%".$hospital_name."%",PDO::PARAM_STR);
+        $ps->bindValue(1,"%".$kensaku_word."%",PDO::PARAM_STR);
         $ps->execute();
         $searchArray = $ps->fetchAll();
         return $searchArray;

@@ -4,7 +4,7 @@ header{
     box-sizing: border-box;
 
     position: absolute;
-    width: 1536px;
+    width: 1517px;
     height: 134px;
     left: 0px;
     top: 0px;
@@ -41,43 +41,85 @@ header{
     position: absolute;
 
     top:3%;
-    left:30%;
+    left:25%;
     margin:10%;
 }
-.hos-info{
+
+/* イメージ画像 */
+.image{
     position: relative;
-    left:-90%;
+    right:40px;
 }
 
-.uketuke-btn{/*予約画面へ*/
-    position: relative;
-    top: 30px;
-    left: 11%;
-    height:50px;
-    width:200px;
-    
-    background: #FFFFFF;
-}
 
-.hos-time{
-    position: relative;
-    left:-80%;
-}
-.hos-kyushin-label{
-    font-size:25px;
-}
-.hos-kyushin-info-label{
-    font-size:20px;
-}
 
-table {
-    border-collapse: collapse;
-  }
-  table th, table td {
-    border: solid 1px black;
-    /*実線 1px 黒*/
+
+/* 〇〇〇〇病院 */
+
+
+
+
+/* 受付ボタン */
+
+
+
+
+
+/* 病院の紹介文 */
+.box {
+    width: 200px;                /* 横幅を200pxに指定 */
+    height: 200px;               /* 横幅を200pxに指定 */
+    border: 1px solid #000;      /* わかりやすくボーダーを引く */
+    overflow-y: scroll;          /* 縦方向にスクロール可能にする */
   }
 
-.table-kyushinbi{
-font-size: 40px;
+
+
+
+/* 診療時間・休診日 */
+
+
+
+
+
+/* 休診日テーブル */
+
+
+
+
+
+/* 診療時間詳細 */
+
+
+
+
+
+
+/* 受付状況 */
+
+
+
+
+
+
+/* 住所・地図 */
+
+
+
+
+
+
+/* <受付ボタン */
+
+
+
+
+
+
+/* 下の空白 */
+.void{
+    position: relative;
+    background-color: #FFFFFF;
+    top: 500px;
+    height: 100px;
 }

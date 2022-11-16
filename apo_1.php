@@ -59,7 +59,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 margin-top:80px;
             }
             header{
-                display:block;
+                display:inline-block;
                 position: fixed;
             }
             h2{
@@ -107,12 +107,14 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
         </style>
     </head>
     <body>
-        <h1 class="rogo">
-            <a href="./top.php">
-                <img src="img/1_Primary_logo_on_transparent_267x69.png">
-            </a>
-        </h1>
+        <header>
+            <h1 class="rogo">
+                <a href="./top.php">
+                    <img src="img/1_Primary_logo_on_transparent_267x69.png">
+                </a>
+            </h1>
             <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
+        </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>
             <h3 class="mb-5"><a href="?ym=<?php echo $prev;?>">&lt;</a><?php echo $html_title;?><a href="?ym=<?php echo $next;?>">&gt;</a></h3>

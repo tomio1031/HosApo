@@ -94,7 +94,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 border-bottom: 3px solid #FFA500;
             }
             .rogo{
-                position: absolute;
                 width: 249px;
                 height: 69px;
                 left: 42px;

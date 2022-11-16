@@ -102,7 +102,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             .btn btn-outline-success btn-lg{
                 display:block;
-                text-align:right;
+                margin-left: auto;
             }
         </style>
     </head>

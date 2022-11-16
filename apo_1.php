@@ -58,10 +58,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 font-family: 'Noto Sans JP', sans-serif;
                 margin-top:80px;
             }
-            header{
-                display:inline-block;
-                position: fixed;
-            }
             h2{
                 text-align:center;
             }
@@ -87,7 +83,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             header{
                 box-sizing: border-box;
-                position: absolute;
                 width: 1536px;
                 /* height: 134px; */
                 height:17%;

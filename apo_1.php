@@ -67,7 +67,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             th{
                 height: 30px;
-                text-aligin:center;
+                text-align:center;
             }
             td{
                 height:100px;
@@ -102,7 +102,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             .btn btn-outline-success btn-lg{
                 display:inline-block;
-                text-aligin:right;
+                text-align:right;
             }
         </style>
     </head>

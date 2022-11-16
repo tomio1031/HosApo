@@ -23,21 +23,40 @@
     <div class="container">
         <div class="main">
 
+
+
+<!-- イメージ画像 -->
             <div class="image">
                 <img src="img/byoin_image.jpg"width="600" height="400">
             </div>
 
+
+<!-- 〇〇〇〇病院 -->
             <div class="hos-info">
                 <h2 class="hos-name">◇　〇〇〇〇病院</h2><h4 class="hos-ka">〇〇科</h4>
             </div>
 
+
+            
+<!-- 受付ボタン -->
             <div class="uketuke-btn">
                 <button type="button" class="btn btn-light rounded-pill btn-outline-dark">予約受付</button>
             </div>
 
+<!-- 病院の紹介文 -->
+
+
+<!-- /* 診療時間・休診日 */ -->
             <div class="hos-time">
-                <h2 class="hos-kyushin-label">受診時間・休診日</h2><h4 class="hos-kyushin-info-label">休診日:◯◯/◯◯</h4>
+                <h2 class="hos-kyushin-label">受診時間・休診日</h2>
+                <h4 class="hos-kyushin-info-label">休診日:◯◯/◯◯</h4>
             </div>
+
+
+
+
+
+<!-- /* 休診日テーブル */ -->
     <div class="table-kyushinbi">
         <table class="kyushin" border="1">
             <tr>
@@ -54,19 +73,49 @@
 
         </table>
     </div>
+
+
+
+<!-- /* 診療時間詳細 */ -->
+
+
+
+
+
+
+<!-- /* 受付状況 */ -->
             <div class="hos-jokyo">
                 <h2 class="hos-jokyo-label">受付状況</h2>
             </div>
 
+
+
+<!-- 受付状況テーブル -->
+
+
+
+
+<!-- /* 住所・地図 */ -->
             <div class="hos-jusyo">
                 <h2 class="hos-jusyo-label">住所・地図</h2><h4 class="hos-jusyo-info-label">◯県◯市◯-◯</h4>
             </div>
 
+
+
+
+<!-- /* <受付ボタン */ -->
             <div class="uketuke-btn">
                 <button type="button" class="btn btn-light rounded-pill btn-outline-dark">予約受付</button>
             </div>
         </div>
     </div>
+
+
+
+
+
+    <!-- /* 下の空白 */ -->
+
 
 </body>
 </html>

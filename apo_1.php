@@ -81,10 +81,36 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             th:nth-of-type(7),td:nth-of-type(7){
                 color:blue;
             }
+            header{
+                box-sizing: border-box;
+                position: absolute;
+                width: 1536px;
+                /* height: 134px; */
+                height:17%;
+                left: 0px;
+                top: 0px;
+
+                background: #FFFFFF;
+                border-bottom: 3px solid #FFA500;
+            }
+            .rogo{
+                position: absolute;
+                width: 249px;
+                height: 69px;
+                left: 42px;
+                top: 30px;
+            }
         </style>
-    
     </head>
     <body>
+        <header>
+            <h1 class="rogo">
+                <a href="./top.php">
+                    <img src="img/1_Primary_logo_on_transparent_267x69.png">
+                </a>
+            </h1>
+            <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
+        </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>
             <h3 class="mb-5"><a href="?ym=<?php echo $prev;?>">&lt;</a><?php echo $html_title;?><a href="?ym=<?php echo $next;?>">&gt;</a></h3>

@@ -45,18 +45,47 @@ header{
 
 .yoyaku-naiyo{
     position: relative;
-    font-size: 40px;
-    left: -450px;
+    left: -370px;
     background-color: #eee;/* 背景色指定 */
     border-radius: 20px;/* 角丸指定 */
-    width: 300%;               /* 幅指定 */
-    height: 250px;           /* 高さ指定 */
+    width: 250%;               /* 幅指定 */
+    height: 180px;           /* 高さ指定 */
+}
+
+.byoin-mei{
+    position: relative;
+    font-size:30px;
+    left:20px;
+}
+
+.jushinsyamei{
+    position: relative;
+    font-size:30px;
+    left:20px;
+}
+
+.hiduke{
+    position: relative;
+    font-size:30px;
+    left:20px;
+}
+
+.uketuke-time{
+    position: relative;
+    font-size:30px;
+    left:20px;
+}
+
+.uketuke-time{
+    position: relative;
+    font-size:30px;
+    left:20px;
 }
 
 .message{
     position: relative;
     top:50px;
-    left:-2.5%;
+    left:-10%;
 }
 
 /*戻るボタン*/

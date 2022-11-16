@@ -1,10 +1,10 @@
 header{
+    
     box-sizing: border-box;
 
     position: absolute;
-    width: 1520px;
-    /* height: 134px; */
-    height:17%;
+    width: 1517px;
+    height: 134px;
     left: 0px;
     top: 0px;
 
@@ -13,7 +13,6 @@ header{
 
 
 }
-
 .rogo{
     position: absolute;
     width: 249px;

@@ -56,7 +56,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
         <style>
             .container{
                 font-family: 'Noto Sans JP', sans-serif;
-                margin-top:80px;
+                margin-top:150px;
             }
             h2{
                 text-align:center;

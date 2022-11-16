@@ -30,7 +30,7 @@
     <div class="gazou">
         <img class="isya_img" src="img/24281318_m.jpg">
     </div>
-    <form action="kekka_test.php" method="post">
+    <form action="kekka.php" method="post">
         <div class="kensaku">
             <input type="search" class="form-control" placeholder="病院名" name="kensaku-word" required>
         </div>

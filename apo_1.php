@@ -100,9 +100,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 left: 42px;
                 top: 30px;
             }
-            .btn btn-outline-success btn-lg{
+            header button{
                 display:block;
-                margin-left: auto;
+                margin-left:auto;
             }
         </style>
     </head>

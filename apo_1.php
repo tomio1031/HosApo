@@ -59,6 +59,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 margin-top:80px;
             }
             header{
+                display:block;
                 position: fixed;
             }
             h2{

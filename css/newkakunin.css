@@ -19,9 +19,37 @@ header{
     top: 30px;
 }
 
+.new-naiyo{
+    position: absolute;
+    width: 425px;
+    height: 44px;
+    left: 100px;
+    top: 150px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height:80px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    left: 28%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
 
+.btn{
+    position: relative;
+    top: 800px;
+    left: 11%;
+    height:50px;
+    width:200px;
+    
+    background: #FFFFFF;
 
-
-
+}
 
 

@@ -9,7 +9,9 @@ header{
     top: 0px;
 
     background: #FFFFFF;
-    border-bottom: 3px solid #FFA500;
+    /* border-bottom: 3px solid #FFA500; */
+
+
 }
 .rogo{
     position: absolute;
@@ -52,7 +54,6 @@ header{
     position: absolute;
     width: 469px;
     height: 36px;
-    /* left: 486px; */
     top: 451px;
 
     left: 50%;
@@ -61,7 +62,7 @@ header{
     -ms-transform: translateX(-50%);
 
     border-radius: 5px;
-}
+} 
 
 #kensaku-jouken{
     position: absolute;

@@ -26,9 +26,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     $date = $ym . '-' . $day;
 
     if ($today == $date) {
-        $week .= '<td class="today">' . $day;
+        $week .= '<td class="today"><a href="apo_2.php?date="' . $date . '>' . $day . '</a></td>';
     } else {
-        $week .= '<td>' . $day;
+        $week .= '<td><a href="apo_2.php?date="' . $date . '>' . $day . '</a></td>';
     }
     $week .= '</td>';
     if ($youbi % 7 == 6 || $day == $day_count) {
@@ -56,7 +56,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
         <style>
             .container{
                 font-family: 'Noto Sans JP', sans-serif;
-                margin-top:80px;
+                margin-top:150px;
             }
             h2{
                 text-align:center;
@@ -67,7 +67,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             th{
                 height: 30px;
-                text-aligin:center;
+                text-align:center;
             }
             td{
                 height:100px;
@@ -83,10 +83,10 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             header{
                 box-sizing: border-box;
-                position: absolute;
-                width: 1536px;
+                position:fixed;
+                width: 100%;
                 /* height: 134px; */
-                height:17%;
+                height:134px;
                 left: 0px;
                 top: 0px;
 
@@ -94,11 +94,14 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 border-bottom: 3px solid #FFA500;
             }
             .rogo{
-                position: absolute;
                 width: 249px;
                 height: 69px;
                 left: 42px;
                 top: 30px;
+            }
+            header button{
+                display:block;
+                margin-left:auto;
             }
         </style>
     </head>
@@ -108,8 +111,8 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 <a href="./top.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
+                <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
             </h1>
-            <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
         </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>

@@ -1,0 +1,46 @@
+/* パスワード再設定 */
+header{
+    
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1536px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    
+}
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+/* ---------------------------- */
+.container{
+
+    top: 18%;
+}
+
+.main{/*再設定が完了致しました*/
+    position: absolute;
+
+    top: 30%;
+    left:30%;
+    margin:10%;
+}
+
+.btn{/*ログイン画面へ*/
+    position: relative;
+    top: 30px;
+    left: 11%;
+    height:50px;
+    width:200px;
+    
+    background: #FFFFFF;
+}

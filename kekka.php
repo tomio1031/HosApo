@@ -9,28 +9,31 @@
 </head>
 
 <!-- ヘッダー -->
-<header>
+<!-- <header>
         <h1 class="rogo">
             <a href="">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
         <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
-    </header>
+    </header> -->
 
     <!--戻るボタン -->
-    <a href="top.php">戻る</a>
-<!-- 検索結果表示 -->
+    <
+    <a class="mdr" href="top.php">戻る</a>
+    
+    
 <?php
-echo "フリーワード:". $_POST[free_search]. "検索結果". $_POST[searchkey]."件";
+echo "フリーワード:". $_POST['kensaku-word']."検索結果：".count($userList)."件";//フリーワードと件数を表示
+e
+$pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
 
-$pdo = new PDO('mysql:host=mysql209.phy.lolipop.lan;dbname=LAA1417815-hosapo;charset=utf8','LAA1417815','Pass0411');
 
 $sql = "SELECT * FROM hosapo_hospital_tbl  WHERE hospital_name  LIKE ? ORDER BY hospital_id  DESC";
 
 $ps = $pdo->prepare($sql);
-$ps->bindValue(1, "%" . $_POST['free_search'] . "%", PDO::PARAM_STR);
-$ps->bindValue(2, "%" . $_POST['searchkey'] . "%", PDO::PARAM_STR);
+$ps->bindValue(1, "%" . $_POST['kensaku-word'] . "%", PDO::PARAM_STR);
+$userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
 $ps->execute();
 
 

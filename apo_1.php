@@ -101,7 +101,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 top: 30px;
             }
             button{
-                display:block;
+                display:inline-block;
                 margin-left:auto;
             }
         </style>

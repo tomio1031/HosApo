@@ -1,3 +1,4 @@
 <?php
-echo $_GET[$date];
+$date=$_GET[$date]
+echo $date;
 ?>

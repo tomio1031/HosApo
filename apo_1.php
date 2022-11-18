@@ -100,9 +100,13 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 left: 42px;
                 top: 30px;
             }
-            button{
-                display:inline-block;
-                margin-left:auto;
+            .logout{
+                position: absolute;
+                left: 79.58%;
+                right: 2.01%;
+                top: 38.81%;
+                bottom: 20.15%;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
             }
         </style>
     </head>
@@ -112,7 +116,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 <a href="./top.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
-                <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
+                <div class="logout">
+                    <button class="btn btn-outline-success btn-lg">ログアウト</button>
+                </div>
             </h1>
         </header>
         <div class="container">

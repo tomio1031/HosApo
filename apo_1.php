@@ -26,9 +26,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     $date = $ym . '-' . $day;
 
     if ($today == $date) {
-        $week .= '<td class="today"><a href="apo_2.php?date="' . $date . '>' . $day . '</a></td>';
+        $week .= '<a href="apo_2.php?date="' . $date . '><td class="today">' . $day . '</td></a>';
     } else {
-        $week .= '<td><a href="apo_2.php?date="' . $date . '>' . $day . '</a></td>';
+        $week .= '<a href="apo_2.php?date="' . $date . '><td>' . $day . '</td></a>';
     }
     $week .= '</td>';
     if ($youbi % 7 == 6 || $day == $day_count) {

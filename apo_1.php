@@ -25,10 +25,11 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     $date = $ym . '-' . $day;
 
+    $link = '<a href="menupost.php?date="' . $date . '>' . $day . '</a>'
     if ($today == $date) {
-        $week .= '<a href="apo_2.php?date="' . $date . '><td class="today">' . $day . '</td></a>';
+        $week .= '<td class="today">' . $link .'</a>';
     } else {
-        $week .= '<a href="apo_2.php?date="' . $date . '><td>' . $day . '</td></a>';
+        $week .= '<td>' . $link . '</td>';
     }
     $week .= '</td>';
     if ($youbi % 7 == 6 || $day == $day_count) {

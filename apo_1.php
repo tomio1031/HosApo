@@ -85,7 +85,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             header{
                 box-sizing: border-box;
                 position:fixed;
-                width: 100%;
+                width: 100vw;
                 /* height: 134px; */
                 height:134px;
                 left: 0px;

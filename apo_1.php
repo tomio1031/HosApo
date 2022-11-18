@@ -25,6 +25,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     $date = $ym . '-' . $day;
 
+    $link='<a href="apo_2.php?date="' . $date . '>' . $day . '</a>'
     if ($today == $date) {
         $week .= '<td class="today">' . $day;
     } else {

@@ -1,3 +1,3 @@
 <?php
-echo $_GET['date'];
+echo $_GET['date']
 ?>

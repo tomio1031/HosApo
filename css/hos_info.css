@@ -1,0 +1,322 @@
+header{
+
+   
+
+    box-sizing: border-box;
+
+
+
+    position: relative;
+
+    width: 100vw;
+
+    height: 134px;
+
+    left: 0px;
+
+    top: 0px;
+
+
+
+    background: #FFFFFF;
+
+    border-bottom: 3px solid #FFA500;
+
+}
+
+
+
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
+
+
+
+#rogout{
+    position: absolute;
+    left: 79.58%;
+    right: 2.01%;
+    top: 38.81%;
+    bottom: 20.15%;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
+}
+
+/* ---------------------------- */
+.container{
+    position: relative;
+    top: 18%;
+}
+
+
+
+.main{/*再設定が完了致しました*/
+    position: absolute;
+
+    top:3%;
+    left:25%;
+    margin:10%;
+
+}
+
+
+
+/* イメージ画像 */
+.image{
+    padding: 20px;
+    position: relative;
+    right:110px;
+    top: 20px;
+    margin: 0 auto;
+}
+
+
+
+/* 〇〇〇〇病院 */
+
+.icon-home{
+    position: relative;
+    top: 63px;
+}
+
+.hos-info{
+    position: relative;
+    right:300px;
+    top: 70px;
+}
+
+
+.hos-name{
+    position: relative;
+    font-size: 60px;
+}
+
+.hos-ka{
+    position: relative;
+    font-size:40px;
+}
+
+
+
+/* 受付ボタン */
+/* solid019 */
+.button_solid019{
+    position: relative;
+
+    right: 190px;
+    top: 100px;
+
+}
+.button_solid019 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #6bb6ff;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    border-radius: 50px;
+}
+.button_solid019 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 46%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button_solid019 a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+
+
+/* 病院の紹介文 */
+.box {
+    position: relative;
+    background:#fcfcff;
+    padding:15px;
+    border:1px solid #3b5998;
+    border-radius:10px;
+    word-break:break-all;
+
+    top:200px;
+    right: 200px;
+    min-height: 200px;
+    width: 800px;
+    font-size: 30px;
+
+    padding-bottom: 20px;
+  }
+
+
+
+
+
+/* 診療時間・休診日 */
+.hos-time{
+    position: relative;
+    padding: 20px;
+    top:200px;
+    right: 70px;
+}
+
+.hos-kyushin-label{
+    position: relative;
+    top: 10px;
+    right: 100px;
+}
+
+/* 
+.hos-kyushin-info-label{
+
+} */
+
+
+/* 休診日テーブル */
+.kyushin{
+    position: relative;
+    top: 200px;
+    width: 800px;
+    padding-bottom: 20px;
+    right: 200px;
+}
+
+table.kyushin th{
+    position: relative;
+    /* border-bottom-width: 3px; */
+    border-bottom: 1px solid #222;
+    background-color:#D9D9D9;
+}
+
+table.kyushin td{
+    position: relative;
+    border-bottom: 1px solid #222;
+
+}
+
+table.kyushin td.waku{
+    border-right: 1px solid #222;
+}
+
+
+
+
+/* 診療時間詳細 */
+.syousai {
+    position: relative;
+    background:#fcfcff;
+    padding:15px;
+    border:1px solid #3b5998;
+    border-radius:10px;
+    word-break:break-all;
+
+    top:250px;
+    right: 200px;
+    min-height: 200px;
+    width: 800px;
+    font-size: 30px;
+  }
+
+
+
+
+.icon-zyusyo{
+    position: relative;
+    top: 40px;
+    right:40px;
+}
+/* 住所・地図 */
+.hos-jusyo{
+position: relative;
+top: 300px;
+right: 121px;
+}
+
+
+.hos-jusyo-label{
+    position: relative
+}
+
+
+
+.hos-jusyo-info-label{
+    position: relative
+}
+
+
+
+/* <受付ボタン */
+/* solid019 */
+.button_solid01{
+    position: relative;
+
+    right: 190px;
+    top: 100px;
+}
+.button_solid01 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #6bb6ff;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    border-radius: 50px;
+}
+.button_solid01 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 46%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button_solid01 a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+
+
+
+
+
+
+
+
+/* 下の空白 */
+.void{
+    position: relative;
+    background-color: #FFFFFF;
+    top:2400px;
+    height: 50px;
+    
+}

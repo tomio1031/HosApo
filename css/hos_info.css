@@ -1,14 +1,27 @@
 header{
+
+   
+
     box-sizing: border-box;
 
-    position: absolute;
-    width: 1517px;
+
+
+    position: relative;
+
+    width: 100vw;
+
     height: 134px;
+
     left: 0px;
+
     top: 0px;
 
+
+
     background: #FFFFFF;
+
     border-bottom: 3px solid #FFA500;
+
 }
 
 
@@ -56,8 +69,9 @@ header{
 .image{
     padding: 20px;
     position: relative;
-    right:40px;
+    right:110px;
     top: 20px;
+    margin: 0 auto;
 }
 
 
@@ -93,7 +107,7 @@ header{
 .button_solid019{
     position: relative;
 
-    right: 130px;
+    right: 190px;
     top: 100px;
 
 }
@@ -133,7 +147,6 @@ header{
 
 
 
-
 /* 病院の紹介文 */
 .box {
     position: relative;
@@ -144,7 +157,7 @@ header{
     word-break:break-all;
 
     top:200px;
-    right: 150px;
+    right: 200px;
     min-height: 200px;
     width: 800px;
     font-size: 30px;
@@ -170,10 +183,10 @@ header{
     right: 100px;
 }
 
-
+/* 
 .hos-kyushin-info-label{
 
-}
+} */
 
 
 /* 休診日テーブル */
@@ -182,7 +195,7 @@ header{
     top: 200px;
     width: 800px;
     padding-bottom: 20px;
-    right: 150px;
+    right: 200px;
 }
 
 table.kyushin th{
@@ -215,7 +228,7 @@ table.kyushin td.waku{
     word-break:break-all;
 
     top:250px;
-    right: 150px;
+    right: 200px;
     min-height: 200px;
     width: 800px;
     font-size: 30px;
@@ -223,43 +236,6 @@ table.kyushin td.waku{
 
 
 
-
-
-/* 受付状況 */
-
-.hos-jokyo{
-    position: relative;
-    top:1000px;
-}
-
-
-
-.hos-jokyo-label{
-
-}
-
-
-/* 受付状況テーブル */
-.zyokyo{
-    position: relative;
-    top: 1000px;
-}
-
-table.kyushin th{
-    position: relative;
-    /* border-bottom-width: 3px; */
-    border-bottom: 1px solid #222;
-}
-
-table.kyushin td{
-    position: relative;
-    border-bottom: 1px solid #222;
-
-}
-
-table.kyushin td.waku{
-    border-right: 1px solid #222;
-}
 
 .icon-zyusyo{
     position: relative;
@@ -291,9 +267,8 @@ right: 121px;
 .button_solid01{
     position: relative;
 
-    right: 130px;
-    top: 500px;
-
+    right: 190px;
+    top: 100px;
 }
 .button_solid01 a {
     position: relative;

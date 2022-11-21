@@ -117,7 +117,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
                 <div class="logout">
-                    <button onclick="location.href='top2.php'" class="btn btn-outline-success btn-lg">ログアウト</button>
+                    <button onclick="location.href='login.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
                 </div>
             </h1>
         </header>

@@ -46,6 +46,7 @@
 		</div>
 
         <div class="form-floating">
+            <p>予約日<p>
             <?php
             $date=$_GET['date'];
             echo $date;

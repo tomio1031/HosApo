@@ -26,6 +26,13 @@
 		<div class="text-brack text-center">
 			<h1>予約情報登録画面</h1>
 	    </div>
+        <div class="form-floating">
+            <p>予約日<p>
+            <?php
+            $date=$_GET['date'];
+            echo $date;
+            ?>
+        </div> 
 
         <div class="form-floating">
             <p>受信者名</p>
@@ -44,14 +51,10 @@
 			<input type="text" class="form-control" id="mail"
 				placeholder="asoaso@asojuku.ac.jp">
 		</div>
-
-        <div class="form-floating">
-            <p>予約日<p>
-            <?php
-            $date=$_GET['date'];
-            echo $date;
-            ?>
-        </div>  
+        <div>
+            <p>時間<p>
+        </div>
+        
   
 	</div>	
 </div>

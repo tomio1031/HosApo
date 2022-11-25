@@ -25,10 +25,11 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     $date = $ym . '-' . $day;
 
+    $link = '<a href="apo_2.php?date=' . $date . '">' . $day . '</a>';
     if ($today == $date) {
-        $week .= '<a href="apo_2.php?date="' . $date . '><td class="today">' . $day . '</td></a>';
+        $week .= '<td class="today">' . $link .'</td>';
     } else {
-        $week .= '<a href="apo_2.php?date="' . $date . '><td>' . $day . '</td></a>';
+        $week .= '<td>' . $link . '</td>';
     }
     $week .= '</td>';
     if ($youbi % 7 == 6 || $day == $day_count) {
@@ -84,7 +85,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             header{
                 box-sizing: border-box;
                 position:fixed;
-                width: 100%;
+                width: 100vw;
                 /* height: 134px; */
                 height:134px;
                 left: 0px;
@@ -94,14 +95,19 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 border-bottom: 3px solid #FFA500;
             }
             .rogo{
+                position:absolute;
                 width: 249px;
                 height: 69px;
                 left: 42px;
                 top: 30px;
             }
-            header button{
-                display:block;
-                margin-left:auto;
+            .logout{
+                position: absolute;
+                left: 79.58%;
+                right: 2.01%;
+                top: 38.81%;
+                bottom: 20.15%;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
             }
         </style>
     </head>
@@ -111,8 +117,10 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 <a href="./top.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
-                <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
             </h1>
+            <div class="logout">
+                    <button onclick="location.href='login.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
+                </div>
         </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>

@@ -1,4 +1,6 @@
 <?php
-$date=$_GET['date']
-echo $date;
+echo $_GET['date'];
+require_once "DBmanager.php";
+$dbm=new DBmanager();
+
 ?>

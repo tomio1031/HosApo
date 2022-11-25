@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/yoyaku...input.css">
     <style>
-        #btn{
+        button{
+            display: inline-block;
             text-align:center;
         }
     </style>

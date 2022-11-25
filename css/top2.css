@@ -1,14 +1,32 @@
-header{
+/* header{
     box-sizing: border-box;
 
-    position: absolute;
-    width: 1536px;
-    /* height: 134px; */
+    position: absolute; 
+    width: 100vw;
+    height: 134px;
     height:17%;
     left: 0px;
     top: 0px;
 
     background: #FFFFFF;
+    border-bottom: 3px solid #FFA500;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+} */
+
+header{
+    box-sizing: border-box;
+
+   position: relative;
+    width: 100vw;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+
+   background: #FFFFFF;
     border-bottom: 3px solid #FFA500;
 }
 
@@ -78,18 +96,4 @@ header{
     right: 3%;
 
     border-radius: 5px;  
-}
-
-.kensaku-jouken{
-    position: absolute;
-    top: 70%;
-    bottom: 68.67%;
-
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-
-    filter: drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16)) drop-shadow(0px 2px 4px rgba(47, 168, 79, 0.24));
-
 }

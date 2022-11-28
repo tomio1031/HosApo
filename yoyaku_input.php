@@ -63,9 +63,10 @@
                       $str.="<option value=\"".date('H:i',$val)."\">".date('H:i',$val)."</option>\n";
                     }
                     $str.="</select>\n";
+                    ?>
                     print "<pre>";
                     print htmlspecialchars($str);
-                ?>
+                
         </div>
         
   

@@ -57,6 +57,15 @@
 		</div>
         <div>
             <p>時間<p>
+                <?php
+                    $str="<select>\n";
+                    foreach(range(mktime(10,0,0,0,0,0),mktime(16,0,0,0,0,0),60*30) as $val){
+                      $str.="<option value=\"".date('H:i',$val)."\">".date('H:i',$val)."</option>\n";
+                    }
+                    $str.="</select>\n";
+                    print "<pre>";
+                    print htmlspecialchars($str);
+                ?>
         </div>
         
   

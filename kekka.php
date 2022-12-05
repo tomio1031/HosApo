@@ -4,11 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/hos_info.css">
+    <link rel="stylesheet" href="css/kekka.css">
     <title>Document</title>
 </head>
-
-<!-- ヘッダー -->
+    
+<body>
+    <!-- ヘッダー -->
 <!-- <header>
         <h1 class="rogo">
             <a href="">
@@ -19,27 +20,26 @@
     </header> -->
 
     <!--戻るボタン -->
-    <
-    <a class="mdr" href="top.php">戻る</a>
-    
-    
+    <div class="mdr">
+    <a href="top2.php">戻る</a>
+    </div>
+
 <?php
-echo "フリーワード:". $_POST['kensaku-word']."検索結果：".count($userList)."件";//フリーワードと件数を表示
-e
-$pdo = new PDO('mysql:host=localhost;dbname=webdb;charset=utf8','webuser','abccsd2');
 
-
-$sql = "SELECT * FROM hosapo_hospital_tbl  WHERE hospital_name  LIKE ? ORDER BY hospital_id  DESC";
-
-$ps = $pdo->prepare($sql);
-$ps->bindValue(1, "%" . $_POST['kensaku-word'] . "%", PDO::PARAM_STR);
+require_once 'DBManager.php';
+$dbmng = new DBManager();
 $userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
-$ps->execute();
+echo "<h1>フリーワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
+
+    foreach($userList as $row){
+        echo "-----------------------------------<br>";
+        echo "$row[hospital_name]<br>";
+    }
 
 
 
 ?>
-    
-<body>
 </body>
 </html>
+
+

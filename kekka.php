@@ -10,14 +10,14 @@
     
 <body>
     <!-- ヘッダー -->
-<header>
+<!-- <header>
         <h1 class="rogo">
             <a href="">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
         <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
-    </header>
+    </header> -->
 
     <!--戻るボタン -->
     <div class="mdr">
@@ -29,7 +29,7 @@
 require_once 'DBManager.php';
 $dbmng = new DBManager();
 $userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
-echo "<h1>フリーワード:". $_POST['kensaku-word']."　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
+echo "<h1>フリーワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
 
     foreach($userList as $row){
         echo "-----------------------------------<br>";

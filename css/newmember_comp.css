@@ -3,7 +3,7 @@ header{
     
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 1536px;
     height: 134px;
     left: 0px;
@@ -14,7 +14,7 @@ header{
 }
 
 .rogo{
-    position: absolute;
+    position: relative;
     width: 249px;
     height: 69px;
     left: 42px;

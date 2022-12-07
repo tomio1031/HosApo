@@ -26,13 +26,6 @@
             <div class="main">
                     <img class="gazou" src="img/24281318_m.jpg">
                 <form action="kekka.php" method="post">
-                    <!-- <div class="kensaku">
-                        <input id="kensaku" type="search" class="form-control" placeholder="病院名" name="kensaku-word" required>
-                    </div>
-                    <div class="kensaku-btn">
-                        <button id="kensaku-btn" class="btn btn-success"><i class="bi bi-search"></i></button>
-                    </div> -->
-
                     <div class="kensaku">
                         <input id="kensaku" type="search" class="form-control" placeholder="病院名" name="kensaku-word" required>
                         <button id="kensaku-btn" class="btn btn-success"><i class="bi bi-search"></i></button>

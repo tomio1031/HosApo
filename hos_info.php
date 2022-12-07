@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/hos_info.css">
+
+    <style>
+
+        
+    </style>
 </head>
 <body>
     <header>
@@ -27,13 +32,14 @@
 
 <!-- イメージ画像 -->
             <div class="image">
+            
                 <img src="img/byoin_image.jpg"width="600" height="400">
             </div>
 
 
 <!-- 〇〇〇〇病院 -->
             <div class="hos-info">
-                <h2 class="hos-name">
+                <div class="hos-name">
                     <div class="icon-home">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0193 11.9846C13.0768 11.2752 13.2616 10.6012 13.5512 9.98462H6V12.4662L10 15.4969V42.0154H38V15.5321L42.5 12.5014V9.98462H24.4488C24.7384 10.6012 24.9232 11.2752 24.9807 11.9846H39.687L36 14.4678V40.0154H12V14.5031L8.67616 11.9846H13.0193Z" fill="#333333"/>
@@ -46,15 +52,46 @@
                         </svg>
                     </div>
 
+
+                    <h1 class="hos-name-1">
                 <?php
-                    require_once "DBManager.php";
-                $dbm = new DBManager();
-                $comment = $dbm->get_hospital_id($_POST["kensaku-word"]);
-                echo "$comment[hospital_name]";
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo $hosList[0]["hospital_name"];
+                    }else{
+                        echo "取得に失敗しました";
+                    }
+
                 ?>
-                </h2>
-                <h4 class="hos-ka">〇〇科</h4>
-            </div>
+
+                    </h1>
+                </div>
+                <h4 class="hos-ka">
+
+                <?php
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo "<h4>" . $hosList[0]["medical_specialty"] . "</h4>";
+                    }else{
+                        echo "<h2>取得に失敗しました</h2>";
+                    }
+
+                ?>
+
+                </h4>
+
 
 
             
@@ -66,16 +103,19 @@
 <!-- 病院の紹介文 -->
         <div class="box">
             <p>
-                <?php
-                require_once "DBManager.php";
-                $dbm = new DBManager();
-                $comment = $dbm->get_hospital_id($_POST["hospital_id"]);
-                $getCnt = count($userList);
-                if($getCnt >= 1){
-                    echo "<h2>".$userList[0]["hospital_introduction"]."</h2>";
-                }else{
-                    echo "<h2>ログインに失敗しました</h2>";
-                }
+            <?php
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo "<h4>" . $hosList[0]["hospital_introduction"] . "</h4>";
+                    }else{
+                        echo "<h2>取得に失敗しました</h2>";
+                    }
                 ?>
             </p>
         </div>
@@ -92,106 +132,6 @@
 
 
 
-
-
-<!-- /* 休診日テーブル */ -->
-        <table class="kyushin" border="2">
-            <tr>
-                <th>　</th><th>　　　　　　　　</th><th>　</th>
-                <th>　</th><th>日</th><th>　</th>
-                <th>　</th><th>月</th><th>　</th>
-                <th>　</th><th>火</th><th>　</th>
-                <th>　</th><th>水</th><th>　</th>
-                <th>　</th><th>木</th><th>　</th>
-                <th>　</th><th>金</th><th>　</th>
-                <th>　</th><th>土</th><th>　</th>
-                <th>　</th><th>祝</th><th>　</th>
-            </tr>
-
-            <tr>
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-
-            <tr>
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-
-            <tr style="background-color:rgb(198, 219, 232);">
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-            
-            <tr>
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-            <tr style="background-color:rgb(198, 219, 232);">
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-            <tr>
-                <td>　</td><td>　　　　　　　　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-                <td>　</td><td>　</td><td class="waku">　</td>
-            </tr>
-
-        </table>
-
-
-
-<!-- /* 診療時間詳細 */ -->
-<div class="syousai">
-    <h1 class="1"></h1>
-    <h2 class="2"></h2>
-</div>
 
 
 
@@ -212,7 +152,44 @@
                         
                 </div>
                 <h2 class="hos-jusyo-label">住所・地図</h2>
-                <h4 class="hos-jusyo-info-label">◯県◯市◯-◯</h4>
+
+                <h4 class="hos-jusyo-info-label">
+                <?php
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo $hosList[0]["hospital_address"];
+                    }else{
+                        echo "取得に失敗しました";
+                    }
+                ?>
+                </h4>
+            </div>
+
+            
+            <div class="map">
+
+            <?php
+            
+            require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+            $dbm = new DBManager();
+            $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+            $getCnt = count($hosList);
+
+            if($getCnt >= 1){
+                echo $hosList[0]["hospital_map"];
+            }else{
+                echo "取得に失敗しました";
+            }
+
+            ?>
             </div>
 
 

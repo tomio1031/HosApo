@@ -16,41 +16,20 @@ class DBManager{
         return $searchArray;
     }
 
-    /*新規追加(ユーザー)
-    public function insertUserTbl($id,$pass,$username,$usermail,$address){
+    public function checkLoginByMailAndPass($mail, $pass){
+        $ret = [];
         $pdo = $this->dbConnect();
-        $sql = "INSERT INTO hosapo_user_tbl(user_id,password,fullname,japan_name,usernme,address,telephone_number,birthday,gender,email_address)VALUES(?,?,?,?,?,?,?,?,?)";
+        $sql = "SELECT * FROM hosapo_user_tbl WHERE email_address = ?";
         $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,$id,PDO::PARAM_INT);
-        $ps->bindValue(2,$pass,PDO::PARAM_STR);
-        $ps->bindValue(3,$username,PDO::PARAM_STR);
-        $ps->bindValue(4,$usermail,PDO::PARAM_STR);
-        $ps->bindValue(5,$address,PDO::PARAM_STR);
+        $ps->bindValue(1, $mail, PDO::PARAM_STR);
         $ps->execute();
-        
-    }*/
-
-    /*public function getUserTblByplace($place){
-        $pdo = $this->dbConnect();
-        $sql = "SELECT * FROM user_tbl1 WHERE address LIKE ?";
-        $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,"%".$place."%",PDO::PARAM_STR);
-        $ps->execute();
-        $searchArray = $ps->fetchAll();
-        return $searchArray;
+        $userList = $ps->fetchAll();
+        foreach($userList as $row){
+            if(password_verify($pass, $row['password']) == true){
+                $ret = $userList;
+            }
+        }
+        return $ret;
     }
-    /*新規追加
-    public function insertUserTbl($id,$pass,$username,$usermail,$address){
-        $pdo = $this->dbConnect();
-        $sql = "INSERT INTO user_tbl(id,pass,usernme,usermail,address)VALUES(?,?,?,?,?)";
-        $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,$id,PDO::PARAM_INT);
-        $ps->bindValue(2,$pass,PDO::PARAM_STR);
-        $ps->bindValue(3,$username,PDO::PARAM_STR);
-        $ps->bindValue(4,$usermail,PDO::PARAM_STR);
-        $ps->bindValue(5,$address,PDO::PARAM_STR);
-        $ps->execute();
-        
-    }*/
 }
 ?>

@@ -67,16 +67,20 @@ header{
 .icon-home{
     position: relative;
     top: 63px;
+    right: 50px;
 }
+
+
 
 .hos-info{
     position: relative;
-    right:300px;
     top: 70px;
 }
 
 
-.hos-name{
+
+
+.hos-name-1{
     position: relative;
     font-size: 60px;
 }
@@ -275,13 +279,14 @@ right: 121px;
 
 
 .hos-jusyo-label{
-    position: relative
+    position: relative;
 }
 
 
 
 .hos-jusyo-info-label{
-    position: relative
+    position: relative;
+    font-size: 30px;
 }
 
 
@@ -292,7 +297,7 @@ right: 121px;
     position: relative;
 
     right: 130px;
-    top: 500px;
+    top: 400px;
 
 }
 .button_solid01 a {
@@ -332,7 +337,14 @@ right: 121px;
 
 
 
+.map{
+    position: relative;
+    top: 300px;
+    right: 150px;
 
+    border:1px solid #3b5998;
+    word-break:break-all;
+}
 
 
 

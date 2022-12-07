@@ -40,6 +40,7 @@ echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結
         echo "$row[hospital_phone_number]<br>";
         echo "$row[medical_specialty]<br>";
         echo "</div>";
+        
     }
 
 

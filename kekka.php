@@ -10,35 +10,44 @@
     
 <body>
     <!-- ヘッダー -->
-<!-- <header>
+<header>
         <h1 class="rogo">
             <a href="">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
         <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
-    </header> -->
+    </header>
 
     <!--戻るボタン -->
     <div class="mdr">
-    <a href="top2.php">戻る</a>
+    <a href="top3.php">戻る</a>
     </div>
 
+
+<div class = "kensakukekka">
 <?php
 
 require_once 'DBManager.php';
 $dbmng = new DBManager();
-$userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
-echo "<h1>フリーワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
+$userList = $dbmng->getUserTblByid($_POST['kensaku-word'],$_POST['hospital_name'],$_POST['hospital_address'],$_POST['hospital_phone_number'],$_POST['medical_specialty']);
+echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
 
     foreach($userList as $row){
-        echo "-----------------------------------<br>";
+        echo "<div> <img src='./img/24636406_s.jpg'>";
         echo "$row[hospital_name]<br>";
+        echo "$row[hospital_address]<br>";
+        echo "$row[hospital_phone_number]<br>";
+        echo "$row[medical_specialty]<br>";
+        echo "</div>";
     }
 
 
-
 ?>
+
+</div>
+
+
 </body>
 </html>
 

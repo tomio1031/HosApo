@@ -16,19 +16,23 @@ class DBManager{
         return $searchArray;
     }
 
-    /*新規追加(ユーザー)
+    //新規追加(ユーザー)
     public function insertUserTbl($id,$pass,$username,$usermail,$address){
         $pdo = $this->dbConnect();
-        $sql = "INSERT INTO hosapo_user_tbl(user_id,password,fullname,japan_name,usernme,address,telephone_number,birthday,gender,email_address)VALUES(?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO hosapo_user_tbl(full_name,password,japan_name,usernme,address,telephone_number,birthday,gender,email_address)VALUES(?,?,?,?,?,?,?,?,?)";
         $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,$id,PDO::PARAM_INT);
-        $ps->bindValue(2,$pass,PDO::PARAM_STR);
-        $ps->bindValue(3,$username,PDO::PARAM_STR);
-        $ps->bindValue(4,$usermail,PDO::PARAM_STR);
-        $ps->bindValue(5,$address,PDO::PARAM_STR);
+        $ps->bindValue(1,$,PDO::PARAM_INT);
+        $ps->bindValue(2,$,PDO::PARAM_STR);
+        $ps->bindValue(3,$,PDO::PARAM_STR);
+        $ps->bindValue(4,$,PDO::PARAM_STR);
+        $ps->bindValue(5,$,PDO::PARAM_STR);
+        $ps->bindValue(6,$,PDO::PARAM_STR);
+        $ps->bindValue(7,$,PDO::PARAM_STR);
+        $ps->bindValue(8,$,PDO::PARAM_STR);
+        $ps->bindValue(9,$,PDO::PARAM_STR);
         $ps->execute();
         
-    }*/
+    }
 
     /*public function getUserTblByplace($place){
         $pdo = $this->dbConnect();

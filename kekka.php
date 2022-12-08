@@ -16,7 +16,7 @@
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login.html'" >ログアウト</button>
+        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login_test.html'" >ログアウト</button>
     </header>
 
     <!--戻るボタン -->
@@ -38,7 +38,7 @@
 
 require_once 'DBmanager.php';
 $dbmng = new DBmanager();
-$userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
+$userList = $dbmng->getUserTblByWord($_POST['kensaku-word']);
 echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
 
     if(count($userList) == 0 ){

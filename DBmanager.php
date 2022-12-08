@@ -110,14 +110,14 @@ class DBManager{
     }*/
 
 
-        /*hosapo_hospital_tblを名前で取得するメソッド
-        public function getUserTblByid(){
-        $pdo = $this->dbConnect();
-        $sql = "SELECT * FROM hosapo_hospital_tbl ";
-        $ps = $pdo->prepare($sql);
-        $ps->execute();
-        $searchArray = $ps->fetchAll();
-        return $searchArray;
-    }*/
+       // hosapo_hospital_tblを名前で取得するメソッド
+    //     public function getUserTblByid(){
+    //     $pdo = $this->dbConnect();
+    //     $sql = "SELECT * FROM hosapo_hospital_tbl ";
+    //     $ps = $pdo->prepare($sql);
+    //     $ps->execute();
+    //     $searchArray = $ps->fetchAll();
+    //     return $searchArray;
+    // }
 }
 ?>

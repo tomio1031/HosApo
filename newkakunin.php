@@ -17,6 +17,7 @@
             </a>
     </header>
 
+
 <div class="new-naiyo">
     <?php
         if((isset($_POST["year"]))&&(isset($_POST["month"]))&&(isset($_POST["day"]))) {
@@ -31,7 +32,7 @@
         $dbm = new DBManager();
         $userList = $dbm->insertUserTbl
         ($_POST['password'], $_POST['name'],$_POST['namek'], $_POST['jyusho'],
-         $_POST['tl'],$birthday,$_POST['gender'],$_POST['e-mailaddress']);
+        $_POST['tl'],$birthday,$_POST['gender'],$_POST['e-mailaddress']);
     
                 
                 echo "メールアドレス:" . $_POST['e-mailaddress'] . "<br>";
@@ -44,11 +45,14 @@
                 echo "性別　　　　　:" . $_POST['gender'] . "<br>";
     ?>
 </div>
-            
-
-            
-
+<div class="button_solid019" onclick="location.href='./newmember.php'" >
+                <a href="#">戻る</a>
+            </div>
+            <div class="button_solid020" onclick="location.href='./user_toroku_comp.html'">
+                <a href="#">登録</a>
+            </div>
         </div>
     </div>
+
 </body>
 </html>

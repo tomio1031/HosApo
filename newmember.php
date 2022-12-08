@@ -23,8 +23,8 @@
     
     <table>
     <div class = "username">
-        <label for="username">メールアドレス</label></th>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="e-mailaddress" required></td>
+        <label for="username">メールアドレス</label>
+        <input type="email" style="width: 150%; padding: 0px; font-size:25px;"  name="e-mailaddress" required>
     </div>
     <div class = "pass">
         <label for="pass">パスワード</label>

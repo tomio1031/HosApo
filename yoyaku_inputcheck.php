@@ -65,7 +65,7 @@
                 echo "予約時間:" . $_POST['time'] ."<br>";           
     ?>
 </div>
-    <form action="yoyaku_comp.php" method="post">
+    <form action="yoyaku_comp.html" method="post">
         <button type="submit" class="btn btn-light rounded-pill btn-outline-dark">登録する</button>
     </form>
 </body>

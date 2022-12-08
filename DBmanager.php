@@ -88,6 +88,28 @@ class DBManager{
         $ps->bindValue(1,$email,PDO::PARAM_STR);
         $ps->execute(array(':password' => $pass, ':email_address' => $email));
     }
+    //あむの画面
+    public function getcomment($hospital_introduction){
+        $pdo = $this->dbConnect();
+        $sql = "SELECT * FROM hosapo_hospital_tbl WHERE hospital_introduction LIKE ?";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1, "%" . $hospital_introduction . "%", PDO::PARAM_STR);
+        $ps->execute();
+        $searchArray = $ps->fetchAll();
+        return $searchArray;
+        }
+        
+        //あむの画面
+        public function getUserTblByIdAndPass($hospital_id){
+            $pdo = $this->dbConnect();
+            $sql = "SELECT * FROM hosapo_hospital_tbl WHERE hospital_id = ? ";
+            $ps = $pdo->prepare($sql);
+            $ps->bindValue(1, $hospital_id, PDO::PARAM_INT);
+            $ps->execute();
+            $searchArray = $ps->fetchAll();
+            return $searchArray;
+        
+            }
 
     /*新規追加(予約状況)
     public function insertapp($){

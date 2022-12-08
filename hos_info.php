@@ -37,10 +37,14 @@
             <div class="image">
             <img src="
                 <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                if (isset($_COOKIE["hospitalid"])) {
+                    $hospitalid=$_COOKIE["hospitalid"];
+                }
+
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -78,10 +82,14 @@
 
                     <h1 class="hos-name-1">
                 <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                    if (isset($_COOKIE["hospitalid"])) {
+                        $hospitalid=$_COOKIE["hospitalid"];
+                    }
+                    
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -99,10 +107,14 @@
                 <h4 class="hos-ka">
 
                 <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                    if (isset($_COOKIE["hospitalid"])) {
+                        $hospitalid=$_COOKIE["hospitalid"];
+                    }
+                    
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -152,10 +164,13 @@
         <div class="box">
             <p>
             <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                if (isset($_COOKIE["hospitalid"])) {
+                    $hospitalid=$_COOKIE["hospitalid"];
+                }
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -178,10 +193,13 @@
                 <h4 class="hos-kyushin-info-label">休診日:
 
                 <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                    if (isset($_COOKIE["hospitalid"])) {
+                        $hospitalid=$_COOKIE["hospitalid"];
+                    }
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -220,10 +238,13 @@
 
                 <h4 class="hos-jusyo-info-label">
                 <?php
-                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+                    if (isset($_COOKIE["hospitalid"])) {
+                        $hospitalid=$_COOKIE["hospitalid"];
+                    }
+                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBManager();
-                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+                    $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
 
@@ -240,11 +261,13 @@
             <div class="map">
 
             <?php
-            
-            require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+            if (isset($_COOKIE["hospitalid"])) {
+                $hospitalid=$_COOKIE["hospitalid"];
+            }
+            require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
 
             $dbm = new DBManager();
-            $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+            $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
             $getCnt = count($hosList);
 

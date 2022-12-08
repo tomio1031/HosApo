@@ -119,9 +119,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>
-            <div class="logout">
+            <!-- <div class="logout">
                     <button onclick="location.href='login_test.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
-                </div>
+                </div> -->
         </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>

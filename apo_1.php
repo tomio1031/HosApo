@@ -1,3 +1,4 @@
+<form action="cookie3.php" method="get">
 <?php
 date_default_timezone_set('Asia/Tokyo');
 
@@ -25,7 +26,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     $date = $ym . '-' . $day;
 
-    $link = '<a href="yoyaku_input.php?date=' . $date . '">' . $day . '</a>';
+    $link = '<a href="cookie3.php?date=' . $date . '">' . $day . '</a>';
     if ($today == $date) {
         $week .= '<td class="today">' . $link .'</td>';
     } else {
@@ -142,5 +143,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             ?>
             </table>
         </div>
+        </form>
     </body>
     </html>

@@ -99,6 +99,14 @@ header{
     position: relative;
     top: 895px;
     left: -150px;
+    width: 300px;
+    
+
+    left: 25%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
 }
 
 .button_solid020 a {
@@ -138,7 +146,14 @@ header{
 .button_solid020{
     position: relative;
     top: 850px;
-    left: 220px;
+    left: 600px;
+    width: 300px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
 }
 
 

@@ -41,9 +41,9 @@
                     $hospitalid=$_COOKIE["hospitalid"];
                 }
 
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -86,9 +86,9 @@
                         $hospitalid=$_COOKIE["hospitalid"];
                     }
                     
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -111,9 +111,9 @@
                         $hospitalid=$_COOKIE["hospitalid"];
                     }
                     
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -167,9 +167,10 @@
                 if (isset($_COOKIE["hospitalid"])) {
                     $hospitalid=$_COOKIE["hospitalid"];
                 }
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBm
+                        anager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -196,9 +197,9 @@
                     if (isset($_COOKIE["hospitalid"])) {
                         $hospitalid=$_COOKIE["hospitalid"];
                     }
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -241,9 +242,9 @@
                     if (isset($_COOKIE["hospitalid"])) {
                         $hospitalid=$_COOKIE["hospitalid"];
                     }
-                    require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBManager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
@@ -264,9 +265,9 @@
             if (isset($_COOKIE["hospitalid"])) {
                 $hospitalid=$_COOKIE["hospitalid"];
             }
-            require_once "DBManager.php";//今後のファイルの読み込み形式。require_once
+            require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-            $dbm = new DBManager();
+            $dbm = new DBmanager();
             $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
             $getCnt = count($hosList);

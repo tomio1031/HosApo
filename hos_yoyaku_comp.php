@@ -51,7 +51,7 @@
                         }
                         ?>
                     </h5>
-                    <h5 class="jushinsyamei">・受信者名　　:</h5>
+                    <h5 class="jushinsyamei">・受診者名　　:</h5>
                     <h5 class="hiduke">・日　　　付　:</h5>
                     <h5 class="uketuke-time">・時　　　間　:</h5>
             </div>

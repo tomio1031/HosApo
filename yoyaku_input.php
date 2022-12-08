@@ -54,7 +54,7 @@ if (isset($_COOKIE["date"])) {
         </div> 
 
         <div class="form-floating">
-            <p>受信者名</p>
+            <p>受診者名</p>
 			<input type="text" class="form-control" id="txt1-1" name = "name"
 				placeholder="名前">
 		</div>

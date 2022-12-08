@@ -115,7 +115,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     <body>
         <header>
             <h1 class="rogo">
-                <a href="./top.php">
+                <a href="./top3.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>

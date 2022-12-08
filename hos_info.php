@@ -18,12 +18,12 @@
 <div class="wrapper">
 <header>
             <h1 class="rogo">
-                <a href="">
+                <a href="top3.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>
             <div class="logout">
-                <button id="logout" class="btn btn-outline-success btn-lg" onclick="location.href='./login.html'">ログアウト</button>
+                <button id="logout" class="btn btn-outline-success btn-lg" onclick="location.href='./login_test.php'">ログアウト</button>
             </div>
         </header>
 

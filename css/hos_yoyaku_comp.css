@@ -196,3 +196,54 @@ header{
     -ms-transform: translateX(-50%);
 
 }
+
+.button{
+    position: relative;
+    display       : inline-block;
+    border-radius : 26%;          /* 角丸       */
+    font-size     : 19pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 28px 30px;   /* 余白       */
+    background    : #66ff66;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 1;           /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #4dffff;  /* 影の設定 */
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    top: 100px;
+}
+
+.button1{
+    position: relative;
+    display       : inline-block;
+    border-radius : 26%;          /* 角丸       */
+    font-size     : 19pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 28px 30px;   /* 余白       */
+    background    : #66d9ff;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 1;           /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #4d5cff;  /* 影の設定 */
+
+    left: 0%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    top: 100px;
+}
+
+.button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 0.8;         /* カーソル時透明度 */
+  }

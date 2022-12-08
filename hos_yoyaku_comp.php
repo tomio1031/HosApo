@@ -12,11 +12,11 @@
 <body>
     <header>
         <h1 class="rogo">
-            <a href="">
+            <a href="top3.php">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-        <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
+        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login_test.php'" >ログアウト</button>
     </header>
 
             <!-- フッター：再設定完了表示 -->
@@ -44,35 +44,24 @@
                     $userList = $dbm->insertApptbl($_POST['name'],$hospitalid,$specialty,$date,$_POST['time']);
                     $searth = $dbm->getUserTblByword($hospitalid);
 
-<<<<<<< Updated upstream
-            <div class="yoyaku-naiyo">
-                    <h5 class="byoin-mei">・病　院　名　:
-                        <?php foreach($searth  as $row){
-                        echo "病院名: $row[hospital_name] <br>";
-                        }
-                        ?>
-                    </h5>
-                    <h5 class="jushinsyamei">・受診者名　　:</h5>
-                    <h5 class="hiduke">・日　　　付　:</h5>
-                    <h5 class="uketuke-time">・時　　　間　:</h5>
-=======
                         echo '<h5 class="jushinsyamei">・診療科　　　:' . $specialty . '<br></h5>';
                         echo '<h5 class="jushinsyamei">・受診者名　　:' . $_POST['name'] . '<br></h5>';
                         echo '<h5 class="hiduke">・日　　　付　:'. $date .'<br></h5>';
                         echo '<h5 class="uketuke-time">・時　　　間　:'. $_POST['time'] .'<br></h5>';     
                     ?>
->>>>>>> Stashed changes
             </div>
             
 
             <h4 class="message">こちらの予約内容でお間違いないですか？</h4>
 
-            <div class="button_solid019" onclick="location.href='./newmember.php'" >
+            <!-- <div class="button_solid019" onclick="location.href='./newmember.php'" >
                 <a href="#">戻る</a>
-            </div>
-            <div class="button_solid020" onclick="location.href='./user_toroku_comp.html'">
+            </div> -->
+            <!-- <div class="button_solid020" onclick="location.href='./user_toroku_comp.html'">
                 <a href="#">登録</a>
-            </div>
+            </div> -->
+            <input class="button1" type="submit" onclick="location.href='./newmember.php'" value="戻る">
+            <input class="button" type="submit" onclick="location.href='./user_toroku_comp.html'"value="予約する">
         </div>
     </div>
 </body>

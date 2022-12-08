@@ -36,18 +36,35 @@
 <div class = "kensakukekka">
 <?php
 
-require_once 'DBManager.php';
-$dbmng = new DBManager();
-$userList = $dbmng->getUserTblByid($_POST['kensaku-word'],$_POST['hospital_name'],$_POST['hospital_address'],$_POST['hospital_phone_number'],$_POST['medical_specialty']);
+require_once 'DBmanager.php';
+$dbmng = new DBmanager();
+$userList = $dbmng->getUserTblByid($_POST['kensaku-word']);
 echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
-    foreach($userList as $row){
-        echo "<div> <img src='./img/24636406_s.jpg'>";
-        echo "$row[hospital_name]<br>";
-        echo "$row[hospital_address]<br>";
-        echo "$row[hospital_phone_number]<br>";
-        echo "$row[medical_specialty]<br>";
-        echo "</div>";
-        
+
+    if(count($userList) == 0 ){
+        echo "<h2 class = a>検索結果がありません</h2>";
+    }else{
+        foreach($userList as $row){
+        echo '<div class = "kekka1">';
+
+                echo '<div class = "photo">';
+                    echo  "<img src=./img/24636406_s.jpg width=200 height=200 >";
+            echo  '</div>';
+
+                echo '<div class = "hospital">';
+                        echo $row['hospital_name']."<br>";
+                echo '</div>';
+            
+            echo '<div class = "moji">';
+
+            echo "<p>$row[medical_specialty]</p>";
+            echo "<p>$row[hospital_address]</p>";
+            echo "<p>$row[hospital_phone_number]</p>";
+            echo'</div>';
+
+        echo '</div>';
+
+        }
     }
 
 

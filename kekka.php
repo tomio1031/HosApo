@@ -16,7 +16,7 @@
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-        <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
+        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login.html'" >ログアウト</button>
     </header>
 
     <!--戻るボタン -->
@@ -24,6 +24,14 @@
     <a href="top3.php">戻る</a>
     </div>
 
+<form action="cookie.php" method="post">
+<div>
+    <h2>検索結果</h2>
+</div>
+<input type="hidden" name="parameter_jiro">
+<a href="cookie.php?parameter=1">博多病院</a>
+
+</form>
 
 <div class = "kensakukekka">
 <?php

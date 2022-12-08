@@ -1,8 +1,8 @@
 header{
     box-sizing: border-box;
 
-    position: absolute;
-    width: 1517px;
+    position: relative;
+    width: 100%;
     height: 134px;
     left: 0px;
     top: 0px;
@@ -14,24 +14,26 @@ header{
 
 
 .rogo{
-    position: absolute;
-    width: 249px;
-    height: 69px;
-    left: 42px;
-    top: 30px;
+  position: relative;
+  width: 249px;
+  height: 69px;
+  left: 3%;
+  top: 20%;
 }
 
 
-
-#rogout{
-    position: absolute;
-    left: 79.58%;
-    right: 2.01%;
-    top: 38.81%;
-    bottom: 20.15%;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
+.logout{
+  position: relative;
+  bottom: 20%;
 }
+
+#logout{
+  position: relative;
+  left:90%;
+  bottom: 20%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
+} 
+
 
 /* ---------------------------- */
 .container{
@@ -67,16 +69,20 @@ header{
 .icon-home{
     position: relative;
     top: 63px;
+    right: 50px;
 }
+
+
 
 .hos-info{
     position: relative;
-    right:300px;
     top: 70px;
 }
 
 
-.hos-name{
+
+
+.hos-name-1{
     position: relative;
     font-size: 60px;
 }
@@ -89,47 +95,125 @@ header{
 
 
 /* 受付ボタン */
-/* solid019 */
-.button_solid019{
-    position: relative;
 
-    right: 130px;
+.cp_ipselect {
+  position: relative;
+  width: 90%;
+  margin: 2em auto;
+  text-align: center;
     top: 100px;
+  right: 150px;
+}
+.cp_sl02 {
+  position: relative;
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  font-size: 18px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+.cp_sl02:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0,0,0, 0);
+}
+.cp_ipselect .cp_sl02 {
+  appearance: none;
+  -webkit-appearance:none
+}
+.cp_ipselect select::-ms-expand {
+  display: none;
+}
+.cp_ipselect:after {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+.cp_sl02_selectlabel {
+  color: rgba(0,0,0, 0.5);
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+.cp_sl02:focus ~ .cp_sl02_selectlabel, .cp_sl02:valid ~ .cp_sl02_selectlabel {
+  color: #da3c41;
+  top: -20px;
+  transition: 0.2s ease all;
+  font-size: 14px;
+}
+.cp_sl02_selectbar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.cp_sl02_selectbar:before, .cp_sl02_selectbar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #da3c41;
+  transition: 0.2s ease all;
+}
+.cp_sl02_selectbar:before {
+  left: 100%;
+}
+.cp_sl02_selectbar:after {
+  right: 50%;
+}
+.cp_sl02:focus ~ .cp_sl06_selectbar:before, .cp_sl06:focus ~ .cp_sl06_selectbar:after {
+  width: 50%;
+}
+.cp_sl02_highlight {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
 
+
+
+input[type="submit"]{
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
 }
-.button_solid019 a {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 240px;
-    padding: 10px 25px;
-    color: #FFF;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    background: #6bb6ff;
-    filter: drop-shadow(0px 2px 4px #ccc);
-    border-radius: 3px;
-    border-radius: 50px;
+input[type="submit"]{
+  position: relative;
+  display: block;
+  padding: 1em 2em 1em 1em;
+  width: 175px;
+  color: #fff;
+    line-height: 1;
+  text-align: center;
+  background: #5bbee5;
+
+  border-radius: 1.5em;
+
+  top: 10px;
+  left: 550px;
 }
-.button_solid019 a:after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #FFF;
-    border-right: 3px solid #FFF;
-    transform: rotate(45deg) translateY(-50%);
-    position: absolute;
-    top: 46%;
-    right: 20px;
-    border-radius: 1px;
-    transition: 0.3s ease-in-out;
-}
-.button_solid019 a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
-}
+
+
 
 
 
@@ -275,64 +359,28 @@ right: 121px;
 
 
 .hos-jusyo-label{
-    position: relative
+    position: relative;
 }
 
 
 
 .hos-jusyo-info-label{
-    position: relative
-}
-
-
-
-/* <受付ボタン */
-/* solid019 */
-.button_solid01{
     position: relative;
-
-    right: 130px;
-    top: 500px;
-
+    font-size: 30px;
 }
-.button_solid01 a {
+
+
+
+
+
+.map{
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 240px;
-    padding: 10px 25px;
-    color: #FFF;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    background: #6bb6ff;
-    filter: drop-shadow(0px 2px 4px #ccc);
-    border-radius: 3px;
-    border-radius: 50px;
+    top: 300px;
+    right: 150px;
+
+    border:1px solid #3b5998;
+    word-break:break-all;
 }
-.button_solid01 a:after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #FFF;
-    border-right: 3px solid #FFF;
-    transform: rotate(45deg) translateY(-50%);
-    position: absolute;
-    top: 46%;
-    right: 20px;
-    border-radius: 1px;
-    transition: 0.3s ease-in-out;
-}
-.button_solid01 a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
-}
-
-
-
-
-
 
 
 
@@ -341,7 +389,7 @@ right: 121px;
 .void{
     position: relative;
     background-color: #FFFFFF;
-    top:2400px;
+    top:300px;
     height: 50px;
     
 }

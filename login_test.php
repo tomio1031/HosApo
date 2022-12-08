@@ -17,9 +17,9 @@
     <div class="card">
         <form action="login-success.php" method="post">
             <div class="mail-moji">メールアドレス</div>
-            <input class="mail" type="text" name="mail">
+            <input class="mail" type="text" name="mail" required>
             <div class="pass-moji">パスワード</div>
-            <input class="pass" type="text" name="pass">
+            <input class="pass" type="text" name="pass" required>
             <button id="login" class="btn btn-outline-success btn-lg">ログイン</button>
             <button id="cant-login" type="button" class="btn btn-link" onclick="location.href='./login_test.php'">ログインできない方はこちら</button>
         </form>

@@ -49,6 +49,7 @@ class DBManager{
         $sql = "SELECT * FROM hosapo_hospital_tbl WHERE hospital_name LIKE ?";
         $ps = $pdo->prepare($sql);
         $ps->bindValue(1,"%".$kensaku_word."%",PDO::PARAM_STR);
+
         $ps->execute();
         $searchArray = $ps->fetchAll();
         return $searchArray;
@@ -107,6 +108,7 @@ class DBManager{
         $ps->execute();
         
     }*/
+
 
         /*hosapo_hospital_tblを名前で取得するメソッド
         public function getUserTblByid(){

@@ -24,31 +24,31 @@
     <table>
     <div class = "username">
         <label for="username">メールアドレス</label></th>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="e-mailaddress"></td>
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="e-mailaddress" required></td>
     </div>
     <div class = "pass">
         <label for="pass">パスワード</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="password">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="password" required>
     </div>
     <div class = "passk">
         <label for="passk">パスワード(確認用)</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="passk">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="passk" required>
     </div>
     <div class = "name">
         <label for="name">氏名</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="name">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="name" required>
     </div>
     <div class = "namek">
         <label for="namek">氏名(カナ)</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="namek">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="namek" required>
     </div>
     <div class = "jyusho">
         <label for="jyusho">ご住所</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="jyusho">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="jyusho"required>
     </div>
     <div class = "tl">
         <label for="tl">電話番号</label>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="tl">
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;" name="tl" required>
     </div>
     <div class = "birthday">
         <label for="birthday">生年月日</label><br>

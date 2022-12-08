@@ -13,16 +13,15 @@
     
     <header>
         <h1 class="rogo">
-            <a href="">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
-            </a>
         </h1>
     </header>
 <h2>パスワード再設定</h2>
+<form action="pass_change_comp.php" method="post">
 <table>
     <div class = "username">
-        <label for="username">ユーザー名</label></th>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="username"></td>
+        <label for="username">メールアドレス</label></th>
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="mail"></td>
     </div>
     <div class = "password">
         <label for="pass">再設定するパスワード</label>
@@ -33,15 +32,7 @@
         <input type="password" style="width: 150%; padding: 0px; font-size:25px;" name="passk">
     </div>
 </table>
-<div class="button_solid019">
-    <a href="#">戻る</a>
-</div>
-<div class="button_solid020">
-    <a href="#">登録</a>
-</div>
-
-
-
-
+<input type="submit" value="登録">
+</form>
 </body>
 </html>

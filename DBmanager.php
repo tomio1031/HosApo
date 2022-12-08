@@ -6,6 +6,14 @@ class DBManager{
         return $pdo;     
     }
 
+    public function updateUserTbl($mail,$password){
+        $pdo = $this->dbConnect();
+        $sql = "UPDATE hosapo_user_tbl SET password=$password WHERE email_address = $mail";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,$password,PDO::PARAM_STR);
+        $ps->execute();
+    }
+
     //新規追加(ユーザー)
     public function insertUserTbl($pass,$name,$namek,$address,$telephone_number,$birthday,$gender,$email_address){
         $pdo = $this->dbConnect();

@@ -27,3 +27,11 @@
 
 </body>
 </html>
+
+<?php
+require_once "DBManager.php";
+
+$dbm = new DBManager();
+$userList = $dbm->updateUserTbl
+($_POST['mail'], $_POST['password']);
+?>

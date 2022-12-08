@@ -21,7 +21,7 @@
             <div class="pass-moji">パスワード</div>
             <input class="pass" type="text" name="pass" required>
             <button id="login" class="btn btn-outline-success btn-lg">ログイン</button>
-            <button id="cant-login" type="button" class="btn btn-link" onclick="location.href='./newpass.html'">ログインできない方はこちら</button>
+            <button id="cant-login" type="button" class="btn btn-link" onclick="location.href='./newpass.php'">ログインできない方はこちら</button>
         </form>
         </div>
     <div class="acount-mottenai">アカウントを持っていませんか？</div>

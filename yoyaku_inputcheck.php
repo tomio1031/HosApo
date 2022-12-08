@@ -54,7 +54,7 @@
         require_once "DBManager.php";
         $dbm = new DBManager();
         $userList = $dbm->insertApptbl($_POST['name'],$hospitalid,$specialty,$date,$_POST['time']);
-        $searth = $dbm->getHospitalTblByid($hospitalid);
+        $searth = $dbm->getUserTblByword($hospitalid);
 
         foreach($searth  as $row){
                 echo "病院名: $row[hospital_name] <br>";

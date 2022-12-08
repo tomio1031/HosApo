@@ -14,7 +14,7 @@
     // header("Location:yoyaku_inputcheck.php");
     
     setcookie("date", $_GET['date'], time() + 60 * 60 * 24 * 30);
-    header("Location:test2.php");
+    header("Location:yoyaku_input.php");
 
     // setcookie("date", $_POST['time'], time() + 60 * 60 * 24 * 30);
     // header("Location:test3.php");

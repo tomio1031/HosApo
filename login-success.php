@@ -11,7 +11,7 @@ $userData = $ps->fetchAll();
     foreach($userData as $row){
            if($_POST['pass'] == $row['password']){
             echo "ログインしました。5秒後にトップページへ移動します...";
-            header('Refresh: 5; URL=http://localhost/web/HosApo/top3.php');
+            header('Refresh: 5; URL=top3.php');
             }else{
             echo "パスワードが一致しません";
             }

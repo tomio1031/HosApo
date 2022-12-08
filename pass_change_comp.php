@@ -12,8 +12,14 @@
 <body>
         <div class = "unko">
             <img  src="img/1_Primary_logo_on_transparent_267x69.png">
-            </div>
+        </div>
 
+        <?php
+            require_once "DBManager.php";
+            $dbm = new DBManager();
+            $userList = $dbm->changeUserTblByword
+            ($_POST['password'],$_POST['mail']);
+        ?> 
 
         <!-- フッター：再設定完了表示 -->
     <div class="container">
@@ -27,11 +33,3 @@
 
 </body>
 </html>
-
-<?php
-require_once "DBManager.php";
-
-$dbm = new DBManager();
-$userList = $dbm->updateUserTbl
-($_POST['mail'], $_POST['password']);
-?>

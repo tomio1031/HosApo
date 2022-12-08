@@ -25,14 +25,13 @@
     </div>
 
 
-<div class = "kensakukekka">
 <?php
 
 require_once 'DBManager.php';
 $dbmng = new DBManager();
 $userList = $dbmng->getUserTblByid($_POST['kensaku-word'],$_POST['hospital_name'],$_POST['hospital_address'],$_POST['hospital_phone_number'],$_POST['medical_specialty']);
-echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
-
+echo "<div class = 'kensakukekka'><h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結果：".count($userList)."件</h1>";//フリーワードと件数を表示
+echo "<\div>"
     foreach($userList as $row){
         echo "<div> <img src='./img/24636406_s.jpg'>";
         echo "$row[hospital_name]<br>";
@@ -46,7 +45,6 @@ echo "<h1>検索ワード:". $_POST['kensaku-word']."　　　　　　検索結
 
 ?>
 
-</div>
 
 
 </body>

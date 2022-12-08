@@ -1,3 +1,4 @@
+<form action="cookie3.php" method="get">
 <?php
 date_default_timezone_set('Asia/Tokyo');
 
@@ -25,10 +26,11 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
 
     $date = $ym . '-' . $day;
 
+    $link = '<a href="cookie3.php?date=' . $date . '">' . $day . '</a>';
     if ($today == $date) {
-        $week .= '<td class="today">' . $day;
+        $week .= '<td class="today">' . $link .'</td>';
     } else {
-        $week .= '<td>' . $day;
+        $week .= '<td>' . $link . '</td>';
     }
     $week .= '</td>';
     if ($youbi % 7 == 6 || $day == $day_count) {
@@ -56,7 +58,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
         <style>
             .container{
                 font-family: 'Noto Sans JP', sans-serif;
-                margin-top:80px;
+                margin-top:150px;
             }
             h2{
                 text-align:center;
@@ -67,7 +69,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             th{
                 height: 30px;
-                text-aligin:center;
+                text-align:center;
             }
             td{
                 height:100px;
@@ -83,10 +85,10 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             }
             header{
                 box-sizing: border-box;
-                position: absolute;
-                width: 1536px;
+                position:fixed;
+                width: 100vw;
                 /* height: 134px; */
-                height:17%;
+                height:134px;
                 left: 0px;
                 top: 0px;
 
@@ -94,11 +96,19 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 border-bottom: 3px solid #FFA500;
             }
             .rogo{
-                position: absolute;
+                position:absolute;
                 width: 249px;
                 height: 69px;
                 left: 42px;
                 top: 30px;
+            }
+            .logout{
+                position: absolute;
+                left: 79.58%;
+                right: 2.01%;
+                top: 38.81%;
+                bottom: 20.15%;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 8px rgba(47, 168, 79, 0.16));
             }
         </style>
     </head>
@@ -109,7 +119,9 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>
-            <button class="btn btn-outline-success btn-lg" id="rogout" onclick="location.href='./login.html'">ログアウト</button>
+            <div class="logout">
+                    <button onclick="location.href='login.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
+                </div>
         </header>
         <div class="container">
         <h2>予約したい日時を選択してください</h2>
@@ -131,5 +143,6 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
             ?>
             </table>
         </div>
+        </form>
     </body>
     </html>

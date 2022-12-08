@@ -1,50 +1,157 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ユーザー登録確認画面</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/newkakunin.css">
-</head>
-<body>
-    <header>
-        <h1 class="rogo">
-            <a href="">
-                <img src="img/1_Primary_logo_on_transparent_267x69.png">
-            </a>
-    </header>
+header{
+    
+    box-sizing: border-box;
 
-    <div class="container">
-        <div class="main">
-            </div>
+    position: absolute;
+    width: 1536px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
 
-            <div class="new-naiyo">
-                <ul>
-                    <li>ユーザー名（ローマ字）:</li>
-                    <li>パ　ス　ワ　ー　ド　　:</li>
-                    <li>氏　名　　　　　　　　:</li>
-                    <li>氏　名　(カ　ナ)　　　:</li>
-                    <li>ご　住　所　　　　　　:</li>
-                    <li>電　話　番　号　　　　:</li>
-                    <li>生　年　月　日　　　　:</li>
-                    <li>性　別　　　　　　　　:</li>
-                </ul>
-            </div>
+    background: #FFFFFF;
+}
 
-            
+.rogo{
+    position: absolute;
+    width: 249px;
+    height: 69px;
+    left: 42px;
+    top: 30px;
+}
 
-            <div class="btn-modoru">
-                <button type="button" class="btn btn-light rounded-pill btn-outline-dark">戻る</button>
-            </div>
+.new-naiyo{
+    position: absolute;
+    width: 425px;
+    height: 44px;
+    left: 100px;
+    top: 150px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height:80px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    left: 28%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
 
-            <div class="btn-yoyaku">
-                <button type="button" class="btn btn-light rounded-pill btn-outline-dark">予約</button>
-            </div>
+.box {
+    position: relative;
+    background: #fcfcff;
+    padding: 15px;
+    border: 1px solid #3b5998;
+    border-radius: 10px;
+    word-break: break-all;
+    top: 800px;
+    right: p0x;
+    min-height: 100px;
+    width: 800px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: red;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%)
+}
 
-        </div>
-    </div>
-</body>
-</html>
+.button_solid019 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #30bee2;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    border-radius: 50px;
+}
+.button_solid019 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(-130deg) translateY(-50%);
+    position: absolute;
+    top: 40%;
+    right: 210px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button_solid019 a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.button_solid019{
+    position: relative;
+    top: 895px;
+    left: -150px;
+    width: 300px;
+    
+
+    left: 25%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+}
+
+.button_solid020 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #1cff4d;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    border-radius: 50px;
+}
+.button_solid020 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 46%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button_solid020 a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+.button_solid020{
+    position: relative;
+    top: 850px;
+    left: 600px;
+    width: 300px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+}

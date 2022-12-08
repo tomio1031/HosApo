@@ -36,50 +36,44 @@ color: #000000;
 }
 
 .username{
-position: absolute;
-width: 350px;
-height: 72px;
-left: 150px;
-top: 300px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-
-color: #000000;
-
-left: 50%;
-transform: translateX(-50%);
--webkit-transform: translateX(-50%);
--ms-transform: translateX(-50%);
-}
-
-
-
-.password{
-        position: absolute;
-    width: 350px;
-    height: 72px;
-    left: 100px;
-    top: 400px;
+    position: absolute;
+    width: 400px;
+    height: 44px;
+    left: 60px;
+    top: 250px;
     
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 25px;
+    line-height: 45px;
     
     color: #000000;
-    box-sizing: border-box;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-
-
-}
+        left: 45%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+    
+    .password{
+        position: absolute;
+        width: 400px;
+        height: 44px;
+        left: 101px;
+        top: 350px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 44px;
+        
+        color: #000000;
+            left: 45%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+    }
 
 
 .btn{/*ログイン画面へ*/

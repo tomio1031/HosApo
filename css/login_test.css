@@ -1,0 +1,146 @@
+body{
+    background-color:whitesmoke;
+}
+
+.rogo{
+    display: table;
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);  
+
+    top:50px;
+}
+
+.login-moji{
+    display: table;
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    color: green;
+
+    top:110px;
+
+    font-size: 40px;
+}
+
+.card{
+
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);  
+
+    top: 120px;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    box-shadow: 0 4px 15px rgba(0,0,0,.2)
+    }
+
+    .mail-moji{
+        display: table;
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        top:10px
+    }
+    
+    .mail{
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        width:290px;
+        top:10px;
+    }
+    
+    .pass-moji{
+        display: table;
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        top:30px;
+    
+    }
+    
+    .pass{
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        top:30px;
+
+        width:290px;
+    }
+    
+    #login{
+        display: table;
+        position: relative;
+
+        width:250px;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        top:80px;
+    }
+    
+    #cant-login{
+        display: table;
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        top:100px;
+    } 
+    
+    .acount-mottenai{
+        display: table;
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    
+        top:200px;
+    }
+    
+    #acount-sakusei{
+        position: relative;
+    
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    
+        top: 200px;
+    }

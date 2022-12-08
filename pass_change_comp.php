@@ -15,7 +15,7 @@
         </div>
 
         <?php
-            require_once "DBManager.php";
+            require_once "DBmanager.php";
             $dbm = new DBManager();
             $userList = $dbm->changeUserTblByword
             ($_POST['password'],$_POST['mail']);

@@ -27,7 +27,7 @@
             // 受け取った値を画面に出力
             
             };
-        require_once "DBManager.php";
+        require_once "DBmanager.php";
         
         $dbm = new DBManager();
         $userList = $dbm->insertUserTbl

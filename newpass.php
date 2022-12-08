@@ -32,7 +32,7 @@
         <input type="password" style="width: 150%; padding: 0px; font-size:25px;" name="passk" required>
     </div>
 </table>
-<input class="toroku" type="submit" value="登録">
+<input class="button" type="submit" value="登録">
 </form>
 </body>
 </html>

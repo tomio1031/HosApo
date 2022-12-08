@@ -18,7 +18,7 @@
                 </a>
             </h1>
             <div class="logout">
-                <button id="logout" class="btn btn-outline-success btn-lg" onclick="location.href='./login.html'">ログアウト</button>
+                <button id="logout" class="btn btn-outline-success btn-lg" onclick="location.href='./login_test.php'">ログアウト</button>
             </div>
         </header>
 

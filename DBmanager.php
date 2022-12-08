@@ -6,13 +6,16 @@ class DBManager{
         return $pdo;     
     }
 
-    public function updateUserTbl($mail,$password){
-        $pdo = $this->dbConnect();
-        $sql = "UPDATE hosapo_user_tbl SET password=$password WHERE email_address = $mail";
-        $ps = $pdo->prepare($sql);
-        $ps->bindValue(1,$password,PDO::PARAM_STR);
-        $ps->execute();
-    }
+    // public function getUserTblByword($pass,$email){
+    //     $pdo = $this->dbConnect();
+    //     $sql = "UPDATE hosapo_user_tbl SET password=? WHERE email_address= ?";
+    //     $ps = $pdo->prepare($sql);
+    //     $ps->bindValue(1,$pass,PDO::PARAM_STR);
+    //     $ps->bindValue(2,"%".$email."%",PDO::PARAM_STR);
+    //     $ps->execute();
+    //     $searchArray = $ps->fetchAll();
+    //     return $searchArray;
+    // }
 
     //新規追加(ユーザー)
     public function insertUserTbl($pass,$name,$namek,$address,$telephone_number,$birthday,$gender,$email_address){
@@ -76,6 +79,16 @@ class DBManager{
         $searchArray = $ps->fetchAll();
         return $searchArray;
     }
+
+    //パスワード再設定するメソッド
+    public function changeUserTblByword($pass,$email){
+        $pdo = $this->dbConnect();
+        $sql = "UPDATE hosapo_user_tbl SET password=:password , email_address = :email_address WHERE  email_address = :email_address";
+        $ps = $pdo->prepare($sql);
+        $ps->bindValue(1,$email,PDO::PARAM_STR);
+        $ps->execute(array(':password' => $pass, ':email_address' => $email));
+    }
+
     /*新規追加(予約状況)
     public function insertapp($){
         $pdo = $this->dbConnect();

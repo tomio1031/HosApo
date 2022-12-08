@@ -18,6 +18,18 @@ color: #000000;
     -ms-transform: translateX(-50%);
 }
 
+.rogo{
+    position: relative;
+    display: table;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    top: 50px;
+}
+
 form table{
     border-spacing: 0;
 }
@@ -172,4 +184,14 @@ color: #000000;
     position: relative;
     top: 600px;
     left: 220px;
+}
+
+.toroku{
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    top: 500px;
 }

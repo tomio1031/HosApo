@@ -21,18 +21,18 @@
 <table>
     <div class = "username">
         <label for="username">メールアドレス</label></th>
-        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="mail"></td>
+        <input type="text" style="width: 150%; padding: 0px; font-size:25px;"  name="mail" required></td>
     </div>
     <div class = "password">
         <label for="pass">再設定するパスワード</label>
-        <input type="password" style="width: 150%; padding: 0px; font-size:25px;"  name="password">
+        <input type="password" style="width: 150%; padding: 0px; font-size:25px;"  name="password" required>
     </div>
     <div class = "passk">
         <label for="passk">再設定するパスワード(確認用)</label>
-        <input type="password" style="width: 150%; padding: 0px; font-size:25px;" name="passk">
+        <input type="password" style="width: 150%; padding: 0px; font-size:25px;" name="passk" required>
     </div>
 </table>
-<input type="submit" value="登録">
+<input class="toroku" type="submit" value="登録">
 </form>
 </body>
 </html>

@@ -45,14 +45,12 @@
                 echo "性別　　　　　:" . $_POST['gender'] . "<br>";
     ?>
 </div>
-<div class="button_solid019" onclick="location.href='./newmember.php'" >
+            <div class="button_solid019" onclick="location.href='./newmember.php'" >
                 <a href="#">戻る</a>
             </div>
             <div class="button_solid020" onclick="location.href='./user_toroku_comp.html'">
                 <a href="#">登録</a>
             </div>
-        </div>
-    </div>
 
 </body>
 </html>

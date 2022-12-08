@@ -25,7 +25,8 @@
         <div class="main">
 
             <h1>◇予約内容確認</h1>
-
+                
+            <div class="yoyaku-naiyo">
             <?php
                 if (isset($_COOKIE["specialty"])) {
                 $specialty=$_COOKIE["specialty"];
@@ -42,8 +43,8 @@
                     $dbm = new DBManager();
                     $userList = $dbm->insertApptbl($_POST['name'],$hospitalid,$specialty,$date,$_POST['time']);
                     $searth = $dbm->getUserTblByword($hospitalid);
-                ?>
 
+<<<<<<< Updated upstream
             <div class="yoyaku-naiyo">
                     <h5 class="byoin-mei">・病　院　名　:
                         <?php foreach($searth  as $row){
@@ -54,19 +55,24 @@
                     <h5 class="jushinsyamei">・受診者名　　:</h5>
                     <h5 class="hiduke">・日　　　付　:</h5>
                     <h5 class="uketuke-time">・時　　　間　:</h5>
+=======
+                        echo '<h5 class="jushinsyamei">・診療科　　　:' . $specialty . '<br></h5>';
+                        echo '<h5 class="jushinsyamei">・受診者名　　:' . $_POST['name'] . '<br></h5>';
+                        echo '<h5 class="hiduke">・日　　　付　:'. $date .'<br></h5>';
+                        echo '<h5 class="uketuke-time">・時　　　間　:'. $_POST['time'] .'<br></h5>';     
+                    ?>
+>>>>>>> Stashed changes
             </div>
-            ?>
+            
 
             <h4 class="message">こちらの予約内容でお間違いないですか？</h4>
 
-            <div class="btn-modoru">
-                <button type="button" class="btn btn-light rounded-pill btn-outline-dark">戻る</button>
+            <div class="button_solid019" onclick="location.href='./newmember.php'" >
+                <a href="#">戻る</a>
             </div>
-
-            <div class="btn-yoyaku">
-                <button type="button" class="btn btn-light rounded-pill btn-outline-dark">予約</button>
+            <div class="button_solid020" onclick="location.href='./user_toroku_comp.html'">
+                <a href="#">登録</a>
             </div>
-
         </div>
     </div>
 </body>

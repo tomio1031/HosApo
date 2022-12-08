@@ -36,8 +36,8 @@ if (isset($_COOKIE["date"])) {
         </h1>
 </header>
 
-<!-- <form action="hos_yoyaku_comp.php" method="post"> -->
-<form action="yoyaku_inputcheck.php" method="post">
+<form action="hos_yoyaku_comp.php" method="post">
+<!-- <form action="yoyaku_inputcheck.php" method="post"> -->
 <div name="maindiv" style="background: #98ed81; background-image: radial-gradient(rgb(255, 255, 255) 20%, transparent 20%), radial-gradient(#fff 20%, transparent 20%); background-size: 20px 20px; background-position: 0 0, 10px 10px;   font-size: 150%; "
     class="container">
 	<div class="row ">

@@ -18,7 +18,7 @@
         </h1>
     </header>
 <form action="newkakunin.php" method="post">
-    <div style="background: #98ed81; background-image: radial-gradient(rgb(255, 255, 255) 20%, transparent 20%), radial-gradient(#fff 20%, transparent 20%); background-size: 20px 20px; background-position: 0 0, 10px 10px;   font-size: 150%; padding: 580px;"></div>
+
     <h2>患者情報登録画面</h2>
     
     <table>

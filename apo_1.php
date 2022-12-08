@@ -120,7 +120,7 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
                 </a>
             </h1>
             <div class="logout">
-                    <button onclick="location.href='login.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
+                    <button onclick="location.href='login_test.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
                 </div>
         </header>
         <div class="container">

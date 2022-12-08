@@ -12,10 +12,10 @@ font-size: 48px;
 line-height: 58px;
 
 color: #000000;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+left: 50%;
+transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
 }
 
 .rogo{

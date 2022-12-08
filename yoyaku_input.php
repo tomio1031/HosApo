@@ -1,3 +1,14 @@
+<!-- <form action="test3.php" method="get">
+<?php
+if (isset($_COOKIE["date"])) {
+    echo "内容".$_COOKIE["date"]."<br>";
+}
+?>
+<input type="submit" value="遷移">
+</form>
+<a href="test3.php?data=<?=$test1?>">$test1</a> -->
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,6 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/yoyaku...input.css">
     <style>
+        button{
+            display: inline-block;
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -19,94 +34,75 @@
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-    </header>
+</header>
+
+<form action="test3.php" method="post">
 <div name="maindiv" style="background: #98ed81; background-image: radial-gradient(rgb(255, 255, 255) 20%, transparent 20%), radial-gradient(#fff 20%, transparent 20%); background-size: 20px 20px; background-position: 0 0, 10px 10px;   font-size: 150%; "
     class="container">
 	<div class="row ">
 		<div class="text-brack text-center">
 			<h1>予約情報登録画面</h1>
 	    </div>
+        <div class="form-floating">
+            <p>予約日<p>
+            <?php
+            if (isset($_COOKIE["date"])) {
+                echo $_COOKIE["date"];
+            }
+            ?>
+        </div> 
 
         <div class="form-floating">
             <p>受信者名</p>
-			<input type="text" class="form-control" id="txt1-1"
-				placeholder="asoaso@asojuku.ac.jp">
+			<input type="text" class="form-control" id="txt1-1" name = "name"
+				placeholder="名前">
 		</div>
 
         <div class="form-floating">
             <p>電話番号</p>
-			<input type="text" class="form-control" id="tl"
-				placeholder="asoaso@asojuku.ac.jp">
+			<input type="text" class="form-control" id="tl" name="tl"
+				placeholder="(例000-000-0000)">
 		</div>
 
         <div class="form-floating">
             <p>メールアドレス</p>
-			<input type="text" class="form-control" id="mail"
-				placeholder="asoaso@asojuku.ac.jp">
+			<input type="text" class="form-control" id="mail" name="mail"
+				placeholder="aaaaaa@asojuku.ac.jp">
 		</div>
-
-        <div class="form-floating">
-            <p>日付</p><br>    
-            <select name="month">
-                <option value="">-</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-            </select>　月
-
-            <select name="day">
-                    <option value="">-</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-            </select>　日
-        </div>  
-  
+        <div>
+            <!-- <p>時間<p>
+                <?php
+                    $str="<select>\n";
+                    foreach(range(mktime(10,0,0,0,0,0),mktime(16,0,0,0,0,0),60*30) as $val){
+                      $str.="<option value=\"".date('H:i',$val)."\">".date('H:i',$val)."</option>\n";
+                    }
+                    $str.="</select>\n";
+                    echo "<pre>";
+                    echo ($str);
+                    ?> -->
+            <label for="sei">時間</label><br>
+                <select name="time">
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">12:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+            </select>
+        </div>
 	</div>	
 </div>
-        <div class="form-floating">
-            
-                <button type="button" class="btn rounded-pill btn-outline-dark" id="btn">登録する</button>
-            
-        </div>
-
+    <div align="center">
+        <button type="submit" class="btn rounded-pill btn-outline-dark" id="btn">登録する</button>
+    </div>
+</form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

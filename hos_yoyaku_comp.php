@@ -12,11 +12,11 @@
 <body>
     <header>
         <h1 class="rogo">
-            <a href="">
+            <a href="top3.php">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-        <button class="btn btn-outline-success btn-lg" id="rogout">ログアウト</button>
+        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login_test.php'" >ログアウト</button>
     </header>
 
             <!-- フッター：再設定完了表示 -->

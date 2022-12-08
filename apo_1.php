@@ -115,12 +115,12 @@ for ( $day = 1; $day <= $day_count; $day++, $youbi++) {
     <body>
         <header>
             <h1 class="rogo">
-                <a href="./top.php">
+                <a href="./top3.php">
                     <img src="img/1_Primary_logo_on_transparent_267x69.png">
                 </a>
             </h1>
             <div class="logout">
-                    <button onclick="location.href='login.html'" class="btn btn-outline-success btn-lg">ログアウト</button>
+            <button id="logout" class="btn btn-outline-success btn-lg" onclick="location.href='./login_test.php'">ログアウト</button>
                 </div>
         </header>
         <div class="container">

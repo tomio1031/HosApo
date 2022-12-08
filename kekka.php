@@ -13,11 +13,11 @@
     <!-- ヘッダー -->
 <header>
         <h1 class="rogo">
-            <a href="">
+            <a href="top3.php">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>
-        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login_test.html'" >ログアウト</button>
+        <button class="btn btn-outline-success btn-lg" id="rogout"onclick="location.href='./login_test.php'" >ログアウト</button>
     </header>
 
     <!--戻るボタン -->
@@ -125,6 +125,3 @@ echo "<h1>フリーワード:". $_POST['kensaku-word']."　　　　　　検索
 ?>
 </body>
 </html>
-
-
->>>>>>> Stashed changes --> -->

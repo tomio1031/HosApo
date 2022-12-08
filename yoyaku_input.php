@@ -30,7 +30,7 @@ if (isset($_COOKIE["date"])) {
 
 <header>
         <h1 class="rogo">
-            <a href="">
+            <a href="top3.php">
                 <img src="img/1_Primary_logo_on_transparent_267x69.png">
             </a>
         </h1>

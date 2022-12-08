@@ -21,16 +21,41 @@
 
             <!-- フッター：再設定完了表示 -->
     <div class="container">
+        
         <div class="main">
 
             <h1>◇予約内容確認</h1>
 
+            <?php
+                if (isset($_COOKIE["specialty"])) {
+                $specialty=$_COOKIE["specialty"];
+                }
+
+                if (isset($_COOKIE["hospitalid"])) {
+                    $hospitalid=$_COOKIE["hospitalid"];
+                }
+
+                if (isset($_COOKIE["date"])) {
+                    $date=$_COOKIE["date"];
+                }
+                    require_once "DBManager.php";
+                    $dbm = new DBManager();
+                    $userList = $dbm->insertApptbl($_POST['name'],$hospitalid,$specialty,$date,$_POST['time']);
+                    $searth = $dbm->getUserTblByword($hospitalid);
+                ?>
+
             <div class="yoyaku-naiyo">
-                    <h5 class="byoin-mei">・病　院　名　:</h5>
+                    <h5 class="byoin-mei">・病　院　名　:
+                        <?php foreach($searth  as $row){
+                        echo "病院名: $row[hospital_name] <br>";
+                        }
+                        ?>
+                    </h5>
                     <h5 class="jushinsyamei">・受信者名　　:</h5>
                     <h5 class="hiduke">・日　　　付　:</h5>
                     <h5 class="uketuke-time">・時　　　間　:</h5>
             </div>
+            ?>
 
             <h4 class="message">こちらの予約内容でお間違いないですか？</h4>
 

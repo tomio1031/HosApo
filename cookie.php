@@ -4,5 +4,5 @@
     header("Location:apo_1.php");
 
     setcookie("hospitalid", $_GET['parameter'], time() + 60 * 60 * 24 * 30);
-    header("Location:nyuuryoku2.php");
+    header("Location:hos_info.php");
 ?>

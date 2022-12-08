@@ -70,7 +70,10 @@ header{
     position: relative;
     top: 63px;
     right: 50px;
+    right: 50px;
 }
+
+
 
 
 
@@ -80,6 +83,9 @@ header{
 }
 
 
+
+
+.hos-name-1{
 
 
 .hos-name-1{
@@ -360,6 +366,7 @@ right: 121px;
 
 .hos-jusyo-label{
     position: relative;
+    position: relative;
 }
 
 
@@ -381,6 +388,11 @@ right: 121px;
     border:1px solid #3b5998;
     word-break:break-all;
 }
+
+
+
+
+
 
 
 

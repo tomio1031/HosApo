@@ -13,6 +13,11 @@
 
         
     </style>
+
+    <style>
+
+        
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -164,6 +169,19 @@
                     }else{
                         echo "<h2>取得に失敗しました</h2>";
                     }
+            <?php
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo "<h4>" . $hosList[0]["hospital_introduction"] . "</h4>";
+                    }else{
+                        echo "<h2>取得に失敗しました</h2>";
+                    }
                 ?>
             </p>
         </div>
@@ -234,25 +252,27 @@
                     }
                 ?>
                 </h4>
+
+                <h4 class="hos-jusyo-info-label">
+                <?php
+                    require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
+
+                    $dbm = new DBManager();
+                    $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
+
+                    $getCnt = count($hosList);
+
+                    if($getCnt >= 1){
+                        echo $hosList[0]["hospital_address"];
+                    }else{
+                        echo "取得に失敗しました";
+                    }
+                ?>
+                </h4>
             </div>
 
-            
-            <div class="map">
 
-            <?php
-            
-            require_once "DBManager1.php";//今後のファイルの読み込み形式。require_once
 
-            $dbm = new DBManager();
-            $hosList = $dbm->getUserTblByIdAndPass($_POST["hospital_id"]);
-
-            $getCnt = count($hosList);
-
-            if($getCnt >= 1){
-                echo $hosList[0]["hospital_map"];
-            }else{
-                echo "取得に失敗しました";
-            }
 
             ?>
             </div>

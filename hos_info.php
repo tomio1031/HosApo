@@ -41,7 +41,7 @@
                     $hospitalid=$_COOKIE["hospitalid"];
                 }
 
-                    require_once "DBanager.php";//今後のファイルの読み込み形式。require_once
+                    require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
                     $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
@@ -169,8 +169,7 @@
                 }
                     require_once "DBmanager.php";//今後のファイルの読み込み形式。require_once
 
-                    $dbm = new DBm
-                        anager();
+                    $dbm = new DBmanager();
                     $hosList = $dbm->getUserTblByIdAndPass($hospitalid);
 
                     $getCnt = count($hosList);
